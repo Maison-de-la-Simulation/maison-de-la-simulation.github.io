@@ -1,0 +1,12 @@
+{
+  "section": "/science-by-computing/#health-genomics",
+  "contacts": [
+    "Yves Vandenbrouck",
+    "Jean-Michel Batto"
+  ],
+  "project_source": "https://www.cea.fr/presse/Pages/actualites-communiques/sante-sciences-du-vivant/CEA-CAD-infrastructure-de-calcul-medecine-genomique.aspx",
+  "cad_website": "https://www.genomecad.fr/",
+  "cad_image_source": "https://www.genomecad.fr/images/logo_color.svg?_wwcv=187",
+  "local_image": "public/brand/cad.svg",
+  "image_note": "Unmodified official CAD identity image, without a separate funding-programme logo."
+}

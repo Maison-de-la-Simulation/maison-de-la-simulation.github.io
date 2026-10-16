@@ -48,6 +48,15 @@
     "verified": "2026-10-16"
   },
   {
+    "id": "cerfacs",
+    "name": "CERFACS",
+    "url": "https://cerfacs.fr/",
+    "image": "partners/cerfacs.png",
+    "source": "https://www.ecmwf.int/sites/default/files/cerfacs.png",
+    "source_page": "https://www.ecmwf.int/en/research/projects/esiwace",
+    "verified": "2026-10-16"
+  },
+  {
     "id": "cc-fr",
     "name": "CC-FR",
     "url": "https://cc-fr.eu/",

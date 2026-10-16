@@ -1,0 +1,79 @@
+{
+  "verified": "2026-10-16",
+  "university_programmes": [
+    {
+      "id": "chps",
+      "code": "CHPS",
+      "name": "High-performance computing & simulation",
+      "institution": "UVSQ · Université Paris-Saclay",
+      "level": "Master’s programme",
+      "description": "Parallel programming, numerical simulation and large-scale computing.",
+      "url": "https://www.chps.uvsq.fr/"
+    },
+    {
+      "id": "ams",
+      "code": "AMS",
+      "name": "Analysis, modelling & simulation",
+      "institution": "Université Paris-Saclay",
+      "level": "Master’s · M2",
+      "description": "Mathematical analysis, numerical methods and modelling.",
+      "url": "https://www.universite-paris-saclay.fr/formation/master/mathematiques-et-applications/m2-analyse-modelisation-simulation"
+    },
+    {
+      "id": "dfe",
+      "code": "DFE",
+      "name": "Fluid dynamics & energetics",
+      "institution": "Université Paris-Saclay",
+      "level": "Master’s · M2",
+      "description": "Fluid mechanics, heat transfer and numerical simulation.",
+      "url": "https://www.universite-paris-saclay.fr/formation/master/mecanique/m2-dynamique-des-fluides-et-energetique"
+    },
+    {
+      "id": "hpc-ai",
+      "code": "HPC-AI",
+      "name": "High-performance computing & AI",
+      "institution": "Mines Paris – PSL",
+      "level": "Advanced Master’s programme",
+      "description": "High-performance computing and artificial intelligence for scientific and industrial applications.",
+      "url": "https://www.hpc-ai.minesparis.psl.eu/en/homepage/"
+    },
+    {
+      "id": "computer-science",
+      "code": "CS",
+      "name": "Computer science",
+      "institution": "Université Paris-Saclay",
+      "level": "Master’s programme",
+      "description": "Algorithms, computing systems and data science.",
+      "url": "https://www.universite-paris-saclay.fr/en/education/masters-degree/computer-science"
+    }
+  ],
+  "scientific_networks": {
+    "rt_calcul": {
+      "url": "https://groupe-calcul.cnrs.fr/pages/presentation_gdr.html",
+      "note": "The former GDR Calcul became RT Calcul in 2026."
+    },
+    "gdr_c4p": {
+      "url": "https://gdr-c4p.cnrs.fr/"
+    },
+    "cea_calcul_intensif": {
+      "name": "CEA Calcul intensif network",
+      "note": "Connection supplied by the laboratory; no public network URL has been asserted."
+    }
+  },
+  "thematic_icon": {
+    "file": "public/media/mathematics-architectures-icon.svg",
+    "style": "Native SVG using the existing grey frame and orange thematic-icon palette."
+  },
+  "cerfacs_partner": {
+    "id": "cerfacs",
+    "name": "CERFACS",
+    "url": "https://cerfacs.fr/",
+    "image": "partners/cerfacs.png",
+    "source": "https://www.ecmwf.int/sites/default/files/cerfacs.png",
+    "source_page": "https://www.ecmwf.int/en/research/projects/esiwace",
+    "verified": "2026-10-16"
+  },
+  "contact_homepages": {
+    "Samuel Kokh": "https://skokh.pages.math.cnrs.fr/homepage/"
+  }
+}

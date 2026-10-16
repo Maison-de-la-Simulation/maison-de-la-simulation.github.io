@@ -16,10 +16,10 @@ for file in htmls:
  assert entries==[(name,base+path) for name,path in expected],(file,entries)
 home=BeautifulSoup((root/'dist/index.html').read_text(),'html.parser')
 partners=json.load(open(root/'src/data/partners.json'))
-expected_ids={'polytechnique','sorbonne','tgcc','idris','cines','inria','cc-fr','riken','juelich','doe'}
+expected_ids={'polytechnique','sorbonne','tgcc','idris','cines','inria','cerfacs','cc-fr','riken','juelich','doe'}
 assert {p['id'] for p in partners}==expected_ids
 assert {a['data-partner'] for a in home.select('.partner-logo-card')}==expected_ids
-assert len(home.select('.partner-logo-card'))==10
+assert len(home.select('.partner-logo-card'))==len(expected_ids)
 assert len(home.select('.header-tutelles img'))==4
 for p in partners:assert (root/'public'/p['image']).is_file(),p
 film=home.select_one('figure.hero-film');assert film and film.find('video') and 'Credit: Francesco Massimo' in film.get_text(' ',strip=True)

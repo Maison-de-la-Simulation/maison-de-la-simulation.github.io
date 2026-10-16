@@ -65,7 +65,7 @@ The public sitemaps and WordPress API were inventoried on 15 October 2026:
 - 11 WordPress pages and 16 posts: the Members post is the main directory; the remaining posts include 12 seminars and 3 vacancies.
 - 87 individual member records and 17 portrait pages.
 - All directory entries, modernised scientific descriptions, seminar archives and document downloads.
-- 80 original local media files, including five PDFs, plus current parent-institution logos, ten official partner identities, and the supplied video with a poster frame.
+- 80 original local media files, including five PDFs, plus current parent-institution logos, eleven official partner identities, and the supplied video with a poster frame.
 
 All website copy, headings, interfaces, dates, forms and accessibility labels are in English. French seminar abstracts and the workshop programme table have been translated. Names, postal addresses and official identities are retained; original archived PDFs and text within supplied scientific graphics remain unchanged.
 
@@ -83,14 +83,25 @@ The partner grid contains exactly:
 4. IDRIS
 5. CINES
 6. Inria
-7. CC-FR
-8. RIKEN
-9. Forschungszentrum Jülich
-10. U.S. Department of Energy
+7. CERFACS
+8. CC-FR
+9. RIKEN
+10. Forschungszentrum Jülich
+11. U.S. Department of Energy
 
 Files are copied from official institutional websites, checked on 16 October 2026. The École polytechnique and CC-FR vector logos are extracted from their official header SVGs. IDRIS uses the image currently served as `logo_IDRIS.png` by its official site. Colours and proportions are retained.
 
+The CERFACS identity is the logo distributed by its institutional partner ECMWF.
+
 See `src/data/partners.json` for names, links, local files and provenance. The four parent-institution logos remain beside the MdlS logo in the masthead and are configured in `src/data/tutelles.json`.
+
+## University teaching and scientific networks
+
+The Training page includes five compact programme cards with official programme URLs. The SoC introduction links to RT Calcul (formerly GDR Calcul) and GDR C4P and mentions the CEA Calcul intensif network. A native SVG icon matches the existing grey-and-orange thematic icons; Samuel Kokh’s name links to his homepage in the research section and directory. Source details are in `migration/university-and-networks.json`.
+
+## Life science expertise
+
+The Science by Computing page includes “Life science”, highlighting the CEA–CAD computing infrastructure at the TGCC and linking to Yves Vandenbrouck and Jean-Michel Batto in the directory. The CAD identity is hosted locally. Project and image provenance are recorded in `migration/health-genomics.json`.
 
 ## Homepage and recruitment
 
@@ -110,7 +121,7 @@ See `migration/video.json` for technical details and the original file checksum.
 - `src/data/translations.en.json`: English versions of imported content and archives.
 - `src/data/pages.json`: original source records, routes, categories and scientific text snapshots.
 - `src/data/software.json`: all six software descriptions, logos and links.
-- `src/data/partners.json`: the ten partner identities and official sources.
+- `src/data/partners.json`: the eleven partner identities and official sources.
 - `src/data/tutelles.json`: parent institutions and their logos.
 - `src/components/SourcePage.astro`: complete page, directory and archive layout.
 - `src/components/PartnerGrid.astro` and `src/lib/partners.ts`: shared partner grid.
@@ -138,7 +149,7 @@ Root and `/mdls-test/` builds have been checked for:
 - All published source routes, local media, internal links and anchors; three withdrawn vacancy pages are excluded.
 - English language declarations and interface copy.
 - The exact six-entry navigation and direct SoC/SbC destinations.
-- Ten local partner identities and four parent-institution logos.
+- Eleven local partner identities and four parent-institution logos.
 - Preservation of all 140 directory list entries and two leadership contacts, including repeated entries present in the source.
 - A responsive Members directory with consistent portraits, team and status sections, and accent-insensitive filtering.
 - The scientific video and its visible Francesco Massimo credit.
