@@ -12,7 +12,7 @@
     "name": "Deisa",
     "tag": "In situ analytics",
     "text": "Deisa connects MPI simulations with distributed Dask processing. Analysing data during computation reduces transfers and intermediate storage.",
-    "url": "https://github.com/GueroudjiAmal/deisa",
+    "url": "https://github.com/deisa-project/deisa-dask",
     "image": "media/deisa-6bf450eb35.png"
   },
   {
