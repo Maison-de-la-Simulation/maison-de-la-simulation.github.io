@@ -1,0 +1,82 @@
+[
+  {
+    "id": "polytechnique",
+    "name": "École polytechnique",
+    "url": "https://www.polytechnique.edu/en",
+    "image": "partners/polytechnique.svg",
+    "source": "https://www.polytechnique.edu/en#official-header-logo",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "sorbonne",
+    "name": "Sorbonne University",
+    "url": "https://www.sorbonne-universite.fr/en",
+    "image": "partners/sorbonne.svg",
+    "source": "https://www.sorbonne-universite.fr/sites/default/files/media/2019-10/logo_4.svg",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "tgcc",
+    "name": "TGCC",
+    "url": "https://www-hpc.cea.fr/tgcc-public/en/html/tgcc-public.html",
+    "image": "partners/tgcc.png",
+    "source": "https://www-hpc.cea.fr/tgcc-public/en/html/_static/tgcc-logo.png",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "idris",
+    "name": "IDRIS",
+    "url": "https://www.idris.fr/",
+    "image": "partners/idris.png",
+    "source": "http://www.idris.fr/img/logo_IDRIS.png",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "cines",
+    "name": "CINES",
+    "url": "https://www.cines.fr/",
+    "image": "partners/cines.png",
+    "source": "https://www.cines.fr/wp-content/uploads/2022/07/logo-couleur.png",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "inria",
+    "name": "Inria",
+    "url": "https://www.inria.fr/en",
+    "image": "partners/inria.svg",
+    "source": "https://www.inria.fr/themes/custom/inria/logo/logo.svg",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "cc-fr",
+    "name": "CC-FR",
+    "url": "https://cc-fr.eu/",
+    "image": "partners/cc-fr.svg",
+    "source": "https://cc-fr.eu/#official-header-logo",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "riken",
+    "name": "RIKEN",
+    "url": "https://www.riken.jp/en/",
+    "image": "partners/riken.png",
+    "source": "https://www.riken.jp/medialibrary/img/common/logo-02.png",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "juelich",
+    "name": "Forschungszentrum Jülich",
+    "url": "https://www.fz-juelich.de/en",
+    "image": "partners/juelich.svg",
+    "source": "https://www.fz-juelich.de/static/media/Logo.99f83415.svg",
+    "verified": "2026-10-16"
+  },
+  {
+    "id": "doe",
+    "name": "U.S. Department of Energy",
+    "url": "https://www.energy.gov/",
+    "image": "partners/doe.png",
+    "source": "https://www.energy.gov/sites/default/files/2025-02/Logo_Color_Seal_Blue_Lettering_Horizontal.png",
+    "verified": "2026-10-16"
+  }
+]

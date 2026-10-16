@@ -1,0 +1,48 @@
+{
+  "language": "en",
+  "html_pages_checked": 178,
+  "source_routes": 162,
+  "navigation": [
+    [
+      "Laboratory",
+      "laboratory/"
+    ],
+    [
+      "Research",
+      "science-of-computing/"
+    ],
+    [
+      "Expertise",
+      "science-by-computing/"
+    ],
+    [
+      "Training",
+      "training/"
+    ],
+    [
+      "Software",
+      "software/"
+    ],
+    [
+      "Members",
+      "members/"
+    ]
+  ],
+  "partner_logos": [
+    "École polytechnique",
+    "Sorbonne University",
+    "TGCC",
+    "IDRIS",
+    "CINES",
+    "Inria",
+    "CC-FR",
+    "RIKEN",
+    "Forschungszentrum Jülich",
+    "U.S. Department of Energy"
+  ],
+  "directory_entries_checked": 140,
+  "missing_directory_names": [],
+  "video_credit": "Francesco Massimo",
+  "residual_french_interface_text": [],
+  "base": "/mdls-test/"
+}

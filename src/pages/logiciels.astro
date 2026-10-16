@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro';
+import software from '../data/software.json';
+import {href} from '../lib/content';
+---
+<Base title="Scientific software"><section class="page-head"><p class="eyebrow">TOOLS FOR THE COMMUNITY</p><h1>Research is built<br/>through software, too.</h1><p class="intro">Libraries, data and visualisation tools designed to support scientific applications on large computing infrastructures.</p></section><section class="section"><div class="editorial-software-grid">{software.map(p=><article class="editorial-software" id={p.id}><figure class="software-logo"><img src={href(p.image)} alt={'Logo '+p.name} loading="lazy"/></figure><p class="eyebrow">{p.tag}</p><h2>{p.name}</h2><p set:html={p.text}/><a href={p.url.replace('__BASE__',import.meta.env.BASE_URL)}>Explore the project ↗</a></article>)}</div></section><section class="section"><a class="resource-link" href={href('/science-of-computing/')}>Research — Science of Computing <span>↗</span></a><a class="resource-link" href={href('/science-by-computing/')}>Expertise — Science by Computing <span>↗</span></a></section></Base>

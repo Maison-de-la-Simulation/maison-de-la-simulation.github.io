@@ -1,0 +1,19 @@
+{
+  "original_name": "LWFA_ionization_injection_HD_EuPRAXIA_longer.mp4",
+  "original_bytes": 15035232,
+  "original_sha256": "411371b6e194fe043960b06beac56527019f9a14a4b00f02f01ed6c4e5ca45e2",
+  "web_path": "video/lwfa-francesco-massimo.mp4",
+  "web_bytes": 5968162,
+  "duration_seconds": 18.04,
+  "original_resolution": [
+    3000,
+    2150
+  ],
+  "web_resolution": [
+    1800,
+    1290
+  ],
+  "credit": "Francesco Massimo",
+  "crop": false,
+  "full_duration": true
+}

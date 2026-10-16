@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ddc",
+    "name": "DDC",
+    "tag": "Discrete domain computation",
+    "text": "A header-only C++ library for multidimensional meshes. It provides containers based on C++23 <code>mdspan</code>, geometric iterators and type-safe indexing. Mesh semantics support both generic and specialised algorithms.",
+    "url": "https://ddc.mdls.fr/",
+    "image": "media/logo-8ac2999c15.png"
+  },
+  {
+    "id": "deisa",
+    "name": "Deisa",
+    "tag": "In situ analytics",
+    "text": "Deisa connects MPI simulations with distributed Dask processing. Analysing data during computation reduces transfers and intermediate storage.",
+    "url": "https://github.com/GueroudjiAmal/deisa",
+    "image": "media/deisa-6bf450eb35.png"
+  },
+  {
+    "id": "kokkos",
+    "name": "Kokkos",
+    "tag": "Performance portability",
+    "text": "The Kokkos ecosystem supports C++ applications across different hardware architectures using a shared code base. It is a Linux Foundation project and part of the High Performance Software Foundation.",
+    "url": "https://kokkos.org/",
+    "image": "media/kokkos-621x1024-304fb1a36a.png"
+  },
+  {
+    "id": "pdi",
+    "name": "PDI",
+    "tag": "Data interface",
+    "text": "PDI decouples applications from data handling libraries. Code annotations and an external specification organise parameter reading, initialisation, post-processing, output, visualisation, fault tolerance, logging, coupling and simulation ensembles.",
+    "url": "https://pdi.dev/",
+    "image": "media/pdi-icon-5d8a2f1085.png"
+  },
+  {
+    "id": "tiledviz",
+    "name": "TiledViz",
+    "tag": "Collaborative visualisation",
+    "text": "A web application for organising and exploring sets of results. Metadata supports sorting and comparison on a workstation or an image wall.",
+    "url": "__BASE__tiledviz-2/",
+    "image": "media/logo-tiledviz-69ab7d6594.png"
+  },
+  {
+    "id": "yml",
+    "name": "YML",
+    "tag": "Computing workflows",
+    "text": "YML describes parallel applications using the YvetteML workflow language, independently of the underlying environment: grids, peer-to-peer systems or metacomputing.",
+    "url": "http://yml.prism.uvsq.fr/",
+    "image": "media/yml-icon-42f58d989d.png"
+  }
+]

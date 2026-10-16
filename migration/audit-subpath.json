@@ -1,0 +1,175 @@
+{
+  "base": "/mdls-test/",
+  "html_pages": 178,
+  "source_routes": 162,
+  "assets": 80,
+  "broken": [],
+  "broken_anchors": [],
+  "duplicate_ids": [],
+  "remote_media": [],
+  "missing_source_routes": [],
+  "text_coverage": [
+    {
+      "path": "/tiledviz-2/",
+      "text_preserved": true,
+      "source_characters": 915,
+      "migrated_characters": 915
+    },
+    {
+      "path": "/glossary/",
+      "text_preserved": true,
+      "source_characters": 0,
+      "migrated_characters": 0
+    },
+    {
+      "path": "/science-of-computing/",
+      "text_preserved": true,
+      "source_characters": 7165,
+      "migrated_characters": 7165
+    },
+    {
+      "path": "/science-by-computing/",
+      "text_preserved": true,
+      "source_characters": 5566,
+      "migrated_characters": 5566
+    },
+    {
+      "path": "/tiledviz/",
+      "text_preserved": true,
+      "source_characters": 9475,
+      "migrated_characters": 9475
+    },
+    {
+      "path": "/seminars/",
+      "text_preserved": true,
+      "source_characters": 1018,
+      "migrated_characters": 1018
+    },
+    {
+      "path": "/formations/",
+      "text_preserved": true,
+      "source_characters": 854,
+      "migrated_characters": 854
+    },
+    {
+      "path": "/how-to-come/",
+      "text_preserved": true,
+      "source_characters": 2196,
+      "migrated_characters": 2196
+    },
+    {
+      "path": "/jobs/",
+      "text_preserved": true,
+      "source_characters": 541,
+      "migrated_characters": 541
+    },
+    {
+      "path": "/contact/",
+      "text_preserved": true,
+      "source_characters": 108,
+      "migrated_characters": 108
+    },
+    {
+      "path": "/",
+      "text_preserved": true,
+      "source_characters": 2129,
+      "migrated_characters": 2129
+    },
+    {
+      "path": "/de-lassistance-a-lautonomie-limpact-de-lia-agentique-sur-les-processus-de-recherche/",
+      "text_preserved": true,
+      "source_characters": 3114,
+      "migrated_characters": 3114
+    },
+    {
+      "path": "/job-phd-python-data-processing-on-supercomputers-for-large-parallel-numerical-simulations/",
+      "text_preserved": true,
+      "source_characters": 9068,
+      "migrated_characters": 9068
+    },
+    {
+      "path": "/job-postdoctoral-position-extension-of-the-massively-parallel-code-amitex-non-periodic-gpu-coupling/",
+      "text_preserved": true,
+      "source_characters": 2897,
+      "migrated_characters": 2897
+    },
+    {
+      "path": "/job-m2-coupling-ia-for-hpc-internship/",
+      "text_preserved": true,
+      "source_characters": 2663,
+      "migrated_characters": 2663
+    },
+    {
+      "path": "/seminar-october-24-2023/",
+      "text_preserved": true,
+      "source_characters": 1244,
+      "migrated_characters": 1244
+    },
+    {
+      "path": "/seminar-may-30-2023-denergium-🧑🏫-herve-mathieu/",
+      "text_preserved": true,
+      "source_characters": 1039,
+      "migrated_characters": 1039
+    },
+    {
+      "path": "/seminar-may-16-2023-development-and-gpu-porting-efforts-for-a-high-performance-low-mach-cfd-solver-based-on-unstructured-adaptive-grids-🧑🏫-patrick-begou-and-vincent/",
+      "text_preserved": true,
+      "source_characters": 1717,
+      "migrated_characters": 1717
+    },
+    {
+      "path": "/simulations-numeriques-ab-initio-de-lirradiation-ionisante-de-la-matiere-🧑🏫-aurellien-de-la-lande/",
+      "text_preserved": true,
+      "source_characters": 1692,
+      "migrated_characters": 1692
+    },
+    {
+      "path": "/members/",
+      "text_preserved": true,
+      "source_characters": 3597,
+      "migrated_characters": 3597
+    },
+    {
+      "path": "/seminar-march-2020-two-level-coarse-corrected-optimized-schwarz-methods-using-petsc-🧑🏫-serge-van-criekingen/",
+      "text_preserved": true,
+      "source_characters": 2288,
+      "migrated_characters": 2288
+    },
+    {
+      "path": "/seminar-march-2019-emulating-quantum-computers-🧑🏫-victor-alessandrini/",
+      "text_preserved": true,
+      "source_characters": 1639,
+      "migrated_characters": 1639
+    },
+    {
+      "path": "/seminar-february-2019-hercules-🧑🏫-olivier-bressand/",
+      "text_preserved": true,
+      "source_characters": 507,
+      "migrated_characters": 507
+    },
+    {
+      "path": "/seminar-february-2019-mpc-the-multi-processor-computing-framework-🧑🏫-julien-jaeger/",
+      "text_preserved": true,
+      "source_characters": 514,
+      "migrated_characters": 514
+    },
+    {
+      "path": "/seminar-february-2019-padawan-🧑🏫-julien-capul/",
+      "text_preserved": true,
+      "source_characters": 387,
+      "migrated_characters": 387
+    },
+    {
+      "path": "/seminar-january-2023-gestion-des-io-parallele-en-modelisation-du-climat-la-bibliotheque-xios-🧑🏫-yann-meurdesoif/",
+      "text_preserved": true,
+      "source_characters": 988,
+      "migrated_characters": 988
+    },
+    {
+      "path": "/software-optimization-for-petaflops-s-scale-quantum-monte-carlo-simulations/",
+      "text_preserved": true,
+      "source_characters": 715,
+      "migrated_characters": 715
+    }
+  ]
+}

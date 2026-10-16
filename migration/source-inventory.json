@@ -1,0 +1,1136 @@
+[
+  {
+    "path": "/",
+    "title": "Maison de la Simulation",
+    "kind": "home",
+    "words": 362,
+    "source_url": "https://mdls.fr/"
+  },
+  {
+    "path": "/category/job/",
+    "title": "Category: job",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/category/job/"
+  },
+  {
+    "path": "/category/job/thesis/",
+    "title": "Category: thesis",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/category/job/thesis/"
+  },
+  {
+    "path": "/category/member/",
+    "title": "Category: member",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/category/member/"
+  },
+  {
+    "path": "/category/non-classe/",
+    "title": "Category: Non classé",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/category/non-classe/"
+  },
+  {
+    "path": "/category/seminar/",
+    "title": "Category: seminar",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/category/seminar/"
+  },
+  {
+    "path": "/category/seminar/seminaire-futur/",
+    "title": "Category: seminaire à venir",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/category/seminar/seminaire-futur/"
+  },
+  {
+    "path": "/category/seminar/seminaire-passe/",
+    "title": "Category: seminaire passé",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/category/seminar/seminaire-passe/"
+  },
+  {
+    "path": "/contact/",
+    "title": "Contact",
+    "kind": "page",
+    "words": 25,
+    "source_url": "https://mdls.fr/contact/"
+  },
+  {
+    "path": "/de-lassistance-a-lautonomie-limpact-de-lia-agentique-sur-les-processus-de-recherche/",
+    "title": "[seminar] December 3 2026 – De l’assistance à l’autonomie : l’impact de l’IA agentique sur les processus de recherche",
+    "kind": "seminar",
+    "words": 556,
+    "source_url": "https://mdls.fr/de-lassistance-a-lautonomie-limpact-de-lia-agentique-sur-les-processus-de-recherche/"
+  },
+  {
+    "path": "/formations/",
+    "title": "Training",
+    "kind": "page",
+    "words": 160,
+    "source_url": "https://mdls.fr/formations/"
+  },
+  {
+    "path": "/glossary/",
+    "title": "glossary",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/"
+  },
+  {
+    "path": "/glossary/amal-gueroudji/",
+    "title": "Amal GUEROUDJI",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/amal-gueroudji/"
+  },
+  {
+    "path": "/glossary/charles-prouveur/",
+    "title": "Charles PROUVEUR",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/charles-prouveur/"
+  },
+  {
+    "path": "/glossary/daniel-borgis/",
+    "title": "Daniel BORGIS",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/daniel-borgis/"
+  },
+  {
+    "path": "/glossary/edouard-audit/",
+    "title": "Edouard AUDIT",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/edouard-audit/"
+  },
+  {
+    "path": "/glossary/florent-nyberg/",
+    "title": "Florent NYBERG",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/florent-nyberg/"
+  },
+  {
+    "path": "/glossary/julien-bigot/",
+    "title": "Julien BIGOT",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/julien-bigot/"
+  },
+  {
+    "path": "/glossary/martial-mancip/",
+    "title": "Martial MANCIP",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/martial-mancip/"
+  },
+  {
+    "path": "/glossary/mathieu-lobet/",
+    "title": "Mathieu LOBET",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/mathieu-lobet/"
+  },
+  {
+    "path": "/glossary/nahid-emad/",
+    "title": "Nahid EMAD",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/nahid-emad/"
+  },
+  {
+    "path": "/glossary/pascal-tremblin/",
+    "title": "Pascal TREMBLIN",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/pascal-tremblin/"
+  },
+  {
+    "path": "/glossary/sarah-saadouni/",
+    "title": "Sarah SAADOUNI",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/sarah-saadouni/"
+  },
+  {
+    "path": "/glossary/simplice-donfack/",
+    "title": "Simplice DONFACK",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/simplice-donfack/"
+  },
+  {
+    "path": "/glossary/thomas-dufaud/",
+    "title": "Thomas DUFAUD",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/thomas-dufaud/"
+  },
+  {
+    "path": "/glossary/thomas-padioleau/",
+    "title": "Thomas PADIOLEAU",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/thomas-padioleau/"
+  },
+  {
+    "path": "/glossary/valerie-belle/",
+    "title": "Valérie BELLE",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/valerie-belle/"
+  },
+  {
+    "path": "/glossary/victor-alessandrini/",
+    "title": "Victor ALESSANDRINI",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/victor-alessandrini/"
+  },
+  {
+    "path": "/glossary/yushan-wang/",
+    "title": "Yushan WANG",
+    "kind": "glossary-entry",
+    "words": 0,
+    "source_url": "https://mdls.fr/glossary/yushan-wang/"
+  },
+  {
+    "path": "/how-to-come/",
+    "title": "How to come",
+    "kind": "page",
+    "words": 503,
+    "source_url": "https://mdls.fr/how-to-come/"
+  },
+  {
+    "path": "/job-m2-coupling-ia-for-hpc-internship/",
+    "title": "[JOB] M2 coupling IA for HPC Internship",
+    "kind": "job",
+    "words": 462,
+    "source_url": "https://mdls.fr/job-m2-coupling-ia-for-hpc-internship/"
+  },
+  {
+    "path": "/job-phd-python-data-processing-on-supercomputers-for-large-parallel-numerical-simulations/",
+    "title": "[JOB] PhD – Python Data Processing on Supercomputers for Large Parallel Numerical Simulations",
+    "kind": "job",
+    "words": 1580,
+    "source_url": "https://mdls.fr/job-phd-python-data-processing-on-supercomputers-for-large-parallel-numerical-simulations/"
+  },
+  {
+    "path": "/job-postdoctoral-position-extension-of-the-massively-parallel-code-amitex-non-periodic-gpu-coupling/",
+    "title": "[JOB] Postdoc at CEA Saclay 👩‍💻🧑‍💻- Extension of the massively parallel code AMITEX: non-periodic, GPU, coupling",
+    "kind": "job",
+    "words": 534,
+    "source_url": "https://mdls.fr/job-postdoctoral-position-extension-of-the-massively-parallel-code-amitex-non-periodic-gpu-coupling/"
+  },
+  {
+    "path": "/jobs/",
+    "title": "Jobs",
+    "kind": "page",
+    "words": 87,
+    "source_url": "https://mdls.fr/jobs/"
+  },
+  {
+    "path": "/member/",
+    "title": "Archives: Members",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/"
+  },
+  {
+    "path": "/member/abel-marin-lafleche/",
+    "title": "Abel MARIN-LAFLECHE",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/abel-marin-lafleche/"
+  },
+  {
+    "path": "/member/adeline-holton/",
+    "title": "Adeline HOLTON",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/adeline-holton/"
+  },
+  {
+    "path": "/member/ahai-chen/",
+    "title": "Ahai CHEN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/ahai-chen/"
+  },
+  {
+    "path": "/member/alessia-perilli/",
+    "title": "Alessia PERILLI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/alessia-perilli/"
+  },
+  {
+    "path": "/member/amal-gueroudji/",
+    "title": "Amal GUEROUDJI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/amal-gueroudji/"
+  },
+  {
+    "path": "/member/anders-bergman/",
+    "title": "Anders BERGMAN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/anders-bergman/"
+  },
+  {
+    "path": "/member/arnaud-durocher/",
+    "title": "Arnaud DUROCHER",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/arnaud-durocher/"
+  },
+  {
+    "path": "/member/axelle-nouaud/",
+    "title": "Axelle NOUAUD",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/axelle-nouaud/"
+  },
+  {
+    "path": "/member/benoit-martin/",
+    "title": "Benoît Martin",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/benoit-martin/"
+  },
+  {
+    "path": "/member/carlo-pierleoni/",
+    "title": "Carlo PIERLEONI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/carlo-pierleoni/"
+  },
+  {
+    "path": "/member/cedric-gageat/",
+    "title": "Cédric GAGEAT",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/cedric-gageat/"
+  },
+  {
+    "path": "/member/charles-prouveur/",
+    "title": "Charles PROUVEUR",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/charles-prouveur/"
+  },
+  {
+    "path": "/member/cihui-pan/",
+    "title": "Cihui PAN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/cihui-pan/"
+  },
+  {
+    "path": "/member/corentin-roussel/",
+    "title": "Corentin ROUSSEL",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/corentin-roussel/"
+  },
+  {
+    "path": "/member/daniel-borgis/",
+    "title": "Daniel BORGIS",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/daniel-borgis/"
+  },
+  {
+    "path": "/member/dominik-domin/",
+    "title": "Dominik DOMIN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/dominik-domin/"
+  },
+  {
+    "path": "/member/edouard-audit/",
+    "title": "Edouard AUDIT",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/edouard-audit/"
+  },
+  {
+    "path": "/member/esra-karakas/",
+    "title": "Esra KARAKAS",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/esra-karakas/"
+  },
+  {
+    "path": "/member/fabien-rozar/",
+    "title": "Fabien ROZAR",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/fabien-rozar/"
+  },
+  {
+    "path": "/member/fan-ye/",
+    "title": "Fan YE",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/fan-ye/"
+  },
+  {
+    "path": "/member/felix-sainsbury-martinez/",
+    "title": "Felix SAINSBURY-MARTINEZ",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/felix-sainsbury-martinez/"
+  },
+  {
+    "path": "/member/feng-xing/",
+    "title": "Feng XING",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/feng-xing/"
+  },
+  {
+    "path": "/member/florence-drui/",
+    "title": "Florence DRUI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/florence-drui/"
+  },
+  {
+    "path": "/member/giorgio-giorgiani/",
+    "title": "Giorgio GIORGIANI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/giorgio-giorgiani/"
+  },
+  {
+    "path": "/member/haithem-kallala/",
+    "title": "Haithem KALLALA",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/haithem-kallala/"
+  },
+  {
+    "path": "/member/helene-bloch/",
+    "title": "Hélène BLOCH",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/helene-bloch/"
+  },
+  {
+    "path": "/member/jeaniffer-vides/",
+    "title": "Jeaniffer VIDES",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/jeaniffer-vides/"
+  },
+  {
+    "path": "/member/jose-fonseca/",
+    "title": "Jose FONSECA",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/jose-fonseca/"
+  },
+  {
+    "path": "/member/julien-bigot/",
+    "title": "Julien BIGOT",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/julien-bigot/"
+  },
+  {
+    "path": "/member/julien-derouillat/",
+    "title": "Julien DEROUILLAT",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/julien-derouillat/"
+  },
+  {
+    "path": "/member/julien-thelot/",
+    "title": "Julien THELOT",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/julien-thelot/"
+  },
+  {
+    "path": "/member/karen-druart/",
+    "title": "Karen DRUART",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/karen-druart/"
+  },
+  {
+    "path": "/member/karim-hasnaoui/",
+    "title": "Karim HASNAOUI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/karim-hasnaoui/"
+  },
+  {
+    "path": "/member/ksander-ejjaaouani/",
+    "title": "Ksander EJJAAOUANI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/ksander-ejjaaouani/"
+  },
+  {
+    "path": "/member/langshi-chen/",
+    "title": "Langshi CHEN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/langshi-chen/"
+  },
+  {
+    "path": "/member/layla-tarondeau/",
+    "title": "Layla TARONDEAU",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/layla-tarondeau/"
+  },
+  {
+    "path": "/member/liang-liang/",
+    "title": "Liang LIANG",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/liang-liang/"
+  },
+  {
+    "path": "/member/louis-sarthou/",
+    "title": "Louis SARTHOU",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/louis-sarthou/"
+  },
+  {
+    "path": "/member/lu-ding/",
+    "title": "Lu DING",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/lu-ding/"
+  },
+  {
+    "path": "/member/malyka-orizono-cysique/",
+    "title": "Malyka ORIZONO-CYSIQUE",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/malyka-orizono-cysique/"
+  },
+  {
+    "path": "/member/marc-baboulin/",
+    "title": "Marc BABOULIN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/marc-baboulin/"
+  },
+  {
+    "path": "/member/marc-chung-to-sang/",
+    "title": "Marc Chung To Sang",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/marc-chung-to-sang/"
+  },
+  {
+    "path": "/member/mario-burbano/",
+    "title": "Mario BURBANO",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/mario-burbano/"
+  },
+  {
+    "path": "/member/martial-mancip/",
+    "title": "Martial MANCIP",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/martial-mancip/"
+  },
+  {
+    "path": "/member/mathieu-lobet/",
+    "title": "Mathieu LOBET",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/mathieu-lobet/"
+  },
+  {
+    "path": "/member/matthieu-haefela/",
+    "title": "Matthieu HAEFELE",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/matthieu-haefela/"
+  },
+  {
+    "path": "/member/maxime-delorme/",
+    "title": "Maxime DELORME",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/maxime-delorme/"
+  },
+  {
+    "path": "/member/maxime-stauffert/",
+    "title": "Maxime STAUFFERT",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/maxime-stauffert/"
+  },
+  {
+    "path": "/member/michel-kern/",
+    "title": "Michel KERN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/michel-kern/"
+  },
+  {
+    "path": "/member/michele-ruggeri/",
+    "title": "Michele RUGGERI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/michele-ruggeri/"
+  },
+  {
+    "path": "/member/mirriam-sibanda/",
+    "title": "Mirriam SIBANDA",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/mirriam-sibanda/"
+  },
+  {
+    "path": "/member/mohamed-gaalich/",
+    "title": "Mohamed GAALICH",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/mohamed-gaalich/"
+  },
+  {
+    "path": "/member/nahid-emad/",
+    "title": "Nahid EMAD",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/nahid-emad/"
+  },
+  {
+    "path": "/member/nathalie-girard/",
+    "title": "Nathalie GIRARD",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/nathalie-girard/"
+  },
+  {
+    "path": "/member/nicolas-doucet/",
+    "title": "Nicolas DOUCET",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/nicolas-doucet/"
+  },
+  {
+    "path": "/member/olga-abramkina/",
+    "title": "Olga ABRAMKINA",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/olga-abramkina/"
+  },
+  {
+    "path": "/member/olivier-iffrig/",
+    "title": "Olivier IFFRIG",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/olivier-iffrig/"
+  },
+  {
+    "path": "/member/pascal-tremblin/",
+    "title": "Pascal TREMBLIN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/pascal-tremblin/"
+  },
+  {
+    "path": "/member/pauline-imbert/",
+    "title": "Pauline IMBERT",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/pauline-imbert/"
+  },
+  {
+    "path": "/member/philippe-bigeon/",
+    "title": "Philippe BIGEON",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/philippe-bigeon/"
+  },
+  {
+    "path": "/member/pierre-elliott-becue/",
+    "title": "Pierre-Elliott BECUE",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/pierre-elliott-becue/"
+  },
+  {
+    "path": "/member/pierre-kestener/",
+    "title": "Pierre KESTENER",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/pierre-kestener/"
+  },
+  {
+    "path": "/member/ralitsa-ivanova/",
+    "title": "Ralitsa IVANOVA",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/ralitsa-ivanova/"
+  },
+  {
+    "path": "/member/rehan-malak/",
+    "title": "Rehan MALAK",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/rehan-malak/"
+  },
+  {
+    "path": "/member/renaud-assemien/",
+    "title": "Renaud ASSEMIEN",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/renaud-assemien/"
+  },
+  {
+    "path": "/member/rudi-leroy/",
+    "title": "Rudi LEROY",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/rudi-leroy/"
+  },
+  {
+    "path": "/member/sebastien-cayrols/",
+    "title": "Sebastien CAYROLS",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/sebastien-cayrols/"
+  },
+  {
+    "path": "/member/simon-daley-yates/",
+    "title": "Simon DALEY-YATES",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/simon-daley-yates/"
+  },
+  {
+    "path": "/member/simplice-donfack/",
+    "title": "Simplice DONFACK",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/simplice-donfack/"
+  },
+  {
+    "path": "/member/sophie-felix/",
+    "title": "Sophie FELIX",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/sophie-felix/"
+  },
+  {
+    "path": "/member/thibault-gasc/",
+    "title": "Thibault GASC",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/thibault-gasc/"
+  },
+  {
+    "path": "/member/thomas-dufaud/",
+    "title": "Thomas DUFAUD",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/thomas-dufaud/"
+  },
+  {
+    "path": "/member/thomas-padioleau/",
+    "title": "Thomas PADIOLEAU",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/thomas-padioleau/"
+  },
+  {
+    "path": "/member/trinidad-mendez-morales/",
+    "title": "Trinidad MENDEZ-MORALES",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/trinidad-mendez-morales/"
+  },
+  {
+    "path": "/member/valerie-belle/",
+    "title": "Valérie BELLE",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/valerie-belle/"
+  },
+  {
+    "path": "/member/viatcheslav-vostrikov/",
+    "title": "Viatcheslav VOSTRIKOV",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/viatcheslav-vostrikov/"
+  },
+  {
+    "path": "/member/victor-alessandrini/",
+    "title": "Victor ALESSANDRINI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/victor-alessandrini/"
+  },
+  {
+    "path": "/member/vineet-soni/",
+    "title": "Vineet SONI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/vineet-soni/"
+  },
+  {
+    "path": "/member/vitaly-gorelov/",
+    "title": "Vitaly GORELOV",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/vitaly-gorelov/"
+  },
+  {
+    "path": "/member/yacine-ould-rouis/",
+    "title": "Yacine OULD-ROUIS",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/yacine-ould-rouis/"
+  },
+  {
+    "path": "/member/ye-hong/",
+    "title": "Yé HONG",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/ye-hong/"
+  },
+  {
+    "path": "/member/yunsong-wang/",
+    "title": "Yunsong WANG",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/yunsong-wang/"
+  },
+  {
+    "path": "/member/yushan-wang/",
+    "title": "Yushan WANG",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/yushan-wang/"
+  },
+  {
+    "path": "/member/yuuichi-asahi/",
+    "title": "Yuuichi Asahi",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/yuuichi-asahi/"
+  },
+  {
+    "path": "/member/zhujie-li/",
+    "title": "Zhujie LI",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/zhujie-li/"
+  },
+  {
+    "path": "/member/zifan-liu/",
+    "title": "Zifan LIU",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/zifan-liu/"
+  },
+  {
+    "path": "/member/ziqiang-zou/",
+    "title": "Ziqiang ZOU",
+    "kind": "member",
+    "words": 0,
+    "source_url": "https://mdls.fr/member/ziqiang-zou/"
+  },
+  {
+    "path": "/member_category/alumni/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/alumni/"
+  },
+  {
+    "path": "/member_category/assistante-de-direction/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/assistante-de-direction/"
+  },
+  {
+    "path": "/member_category/associate-professor/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/associate-professor/"
+  },
+  {
+    "path": "/member_category/deputy-director/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/deputy-director/"
+  },
+  {
+    "path": "/member_category/director/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/director/"
+  },
+  {
+    "path": "/member_category/engineer/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/engineer/"
+  },
+  {
+    "path": "/member_category/intern/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/intern/"
+  },
+  {
+    "path": "/member_category/member/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/member/"
+  },
+  {
+    "path": "/member_category/phd/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/phd/"
+  },
+  {
+    "path": "/member_category/postdoc/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/postdoc/"
+  },
+  {
+    "path": "/member_category/professor/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/professor/"
+  },
+  {
+    "path": "/member_category/project-manager/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/project-manager/"
+  },
+  {
+    "path": "/member_category/research-director/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/research-director/"
+  },
+  {
+    "path": "/member_category/research-engineer/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_category/research-engineer/"
+  },
+  {
+    "path": "/member_location/alumni/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_location/alumni/"
+  },
+  {
+    "path": "/member_location/deputy-director/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_location/deputy-director/"
+  },
+  {
+    "path": "/member_location/director/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_location/director/"
+  },
+  {
+    "path": "/member_location/executive-assistant/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_location/executive-assistant/"
+  },
+  {
+    "path": "/member_location/membres/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_location/membres/"
+  },
+  {
+    "path": "/member_location/phd-students/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_location/phd-students/"
+  },
+  {
+    "path": "/member_location/post-doc/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_location/post-doc/"
+  },
+  {
+    "path": "/member_location/research-engineer/",
+    "title": "Nothing Found",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/member_location/research-engineer/"
+  },
+  {
+    "path": "/members/",
+    "title": "Members",
+    "kind": "directory",
+    "words": 561,
+    "source_url": "https://mdls.fr/members/"
+  },
+  {
+    "path": "/science-by-computing/",
+    "title": "Science by Computing team",
+    "kind": "page",
+    "words": 953,
+    "source_url": "https://mdls.fr/science-by-computing/"
+  },
+  {
+    "path": "/science-of-computing/",
+    "title": "Science of Computing team",
+    "kind": "page",
+    "words": 1290,
+    "source_url": "https://mdls.fr/science-of-computing/"
+  },
+  {
+    "path": "/seminar-february-2019-hercules-🧑🏫-olivier-bressand/",
+    "title": "[SEMINAR] February 2019 – Hercules 🧑‍🏫 Olivier Bressand",
+    "kind": "seminar",
+    "words": 92,
+    "source_url": "https://mdls.fr/seminar-february-2019-hercules-🧑🏫-olivier-bressand/"
+  },
+  {
+    "path": "/seminar-february-2019-mpc-the-multi-processor-computing-framework-🧑🏫-julien-jaeger/",
+    "title": "[SEMINAR] February 2019 – MPC, The Multi-Processor Computing Framework 🧑‍🏫 Julien Jaeger",
+    "kind": "seminar",
+    "words": 87,
+    "source_url": "https://mdls.fr/seminar-february-2019-mpc-the-multi-processor-computing-framework-🧑🏫-julien-jaeger/"
+  },
+  {
+    "path": "/seminar-february-2019-padawan-🧑🏫-julien-capul/",
+    "title": "[SEMINAR] February 2019 – PaDaWan 🧑‍🏫 Julien CAPUL",
+    "kind": "seminar",
+    "words": 67,
+    "source_url": "https://mdls.fr/seminar-february-2019-padawan-🧑🏫-julien-capul/"
+  },
+  {
+    "path": "/seminar-january-2023-gestion-des-io-parallele-en-modelisation-du-climat-la-bibliotheque-xios-🧑🏫-yann-meurdesoif/",
+    "title": "[SEMINAR] January 2013 – Gestion des IO parallèle en modélisation du climat – la bibliothèque XIOS 🧑‍🏫 Yann MEURDESOIF",
+    "kind": "seminar",
+    "words": 176,
+    "source_url": "https://mdls.fr/seminar-january-2023-gestion-des-io-parallele-en-modelisation-du-climat-la-bibliotheque-xios-%f0%9f%a7%91%f0%9f%8f%ab-yann-meurdesoif/"
+  },
+  {
+    "path": "/seminar-march-2019-emulating-quantum-computers-🧑🏫-victor-alessandrini/",
+    "title": "[SEMINAR] March 2019 – Emulating quantum computers 🧑‍🏫 Victor Alessandrini",
+    "kind": "seminar",
+    "words": 291,
+    "source_url": "https://mdls.fr/seminar-march-2019-emulating-quantum-computers-🧑🏫-victor-alessandrini/"
+  },
+  {
+    "path": "/seminar-march-2020-two-level-coarse-corrected-optimized-schwarz-methods-using-petsc-🧑🏫-serge-van-criekingen/",
+    "title": "[SEMINAR] March 2020 – Two-level Coarse Corrected Optimized Schwarz Methods using PETSc 🧑‍🏫 Serge Van Criekingen",
+    "kind": "seminar",
+    "words": 417,
+    "source_url": "https://mdls.fr/seminar-march-2020-two-level-coarse-corrected-optimized-schwarz-methods-using-petsc-🧑🏫-serge-van-criekingen/"
+  },
+  {
+    "path": "/seminar-may-16-2023-development-and-gpu-porting-efforts-for-a-high-performance-low-mach-cfd-solver-based-on-unstructured-adaptive-grids-🧑🏫-patrick-begou-and-vincent/",
+    "title": "[SEMINAR] May 16 2023 – Development and GPU porting efforts for a high-performance low-Mach CFD solver based on unstructured adaptive grids 🧑‍🏫  Patrick BEGOU and Vincent MOUREAU",
+    "kind": "seminar",
+    "words": 305,
+    "source_url": "https://mdls.fr/seminar-may-16-2023-development-and-gpu-porting-efforts-for-a-high-performance-low-mach-cfd-solver-based-on-unstructured-adaptive-grids-🧑🏫-patrick-begou-and-vincent/"
+  },
+  {
+    "path": "/seminar-may-30-2023-denergium-🧑🏫-herve-mathieu/",
+    "title": "[SEMINAR] May 30 2023 – DENERGIUM  🧑‍🏫 Hervé MATHIEU",
+    "kind": "seminar",
+    "words": 164,
+    "source_url": "https://mdls.fr/seminar-may-30-2023-denergium-%f0%9f%a7%91%f0%9f%8f%ab-herve-mathieu/"
+  },
+  {
+    "path": "/seminar-october-24-2023/",
+    "title": "[Seminar] October 24 2023 – Adéquation algorithme architecture pour l’accélération de méthodes d’inversion de données en grande dimension 🧑‍🏫 Nicolas GAC",
+    "kind": "seminar",
+    "words": 215,
+    "source_url": "https://mdls.fr/seminar-october-24-2023/"
+  },
+  {
+    "path": "/seminars/",
+    "title": "Seminars",
+    "kind": "page",
+    "words": 193,
+    "source_url": "https://mdls.fr/seminars/"
+  },
+  {
+    "path": "/simulations-numeriques-ab-initio-de-lirradiation-ionisante-de-la-matiere-🧑🏫-aurellien-de-la-lande/",
+    "title": "[SEMINAR] January 2023 – Simulations numériques ab initio de l’irradiation ionisante de la matière 🧑‍🏫 Auréllien de la Lande",
+    "kind": "seminar",
+    "words": 316,
+    "source_url": "https://mdls.fr/simulations-numeriques-ab-initio-de-lirradiation-ionisante-de-la-matiere-🧑🏫-aurellien-de-la-lande/"
+  },
+  {
+    "path": "/software-optimization-for-petaflops-s-scale-quantum-monte-carlo-simulations/",
+    "title": "[SEMINAR] December 2012 – Software optimization for petaflops/s scale Quantum Monte Carlo simulations 🧑‍🏫 by Anthony SCEMAMA",
+    "kind": "seminar",
+    "words": 132,
+    "source_url": "https://mdls.fr/software-optimization-for-petaflops-s-scale-quantum-monte-carlo-simulations/"
+  },
+  {
+    "path": "/tiledviz-2/",
+    "title": "TiledViz",
+    "kind": "page",
+    "words": 155,
+    "source_url": "https://mdls.fr/tiledviz-2/"
+  },
+  {
+    "path": "/tiledviz/",
+    "title": "TiledViz : outil web  pour la visualisation tuilée",
+    "kind": "page",
+    "words": 1797,
+    "source_url": "https://mdls.fr/tiledviz/"
+  },
+  {
+    "path": "/tooltips_categories/member/",
+    "title": "Tooltips Categories: member",
+    "kind": "archive",
+    "words": 0,
+    "source_url": "https://mdls.fr/tooltips_categories/member/"
+  }
+]

@@ -1,0 +1,11 @@
+---
+import SourcePage from '../components/SourcePage.astro';
+import {content as pages} from '../lib/content';
+const reserved=new Set(['/','/laboratoire/','/recherche/','/logiciels/','/formations/','/contact/','/actualites/','/sources/','/recherche-site/']);
+export function getStaticPaths(){
+ const reserved=new Set(['/','/laboratoire/','/recherche/','/logiciels/','/formations/','/contact/','/actualites/','/sources/','/recherche-site/']);
+ return pages.filter(p=>!reserved.has(p.path)).map(page=>({params:{path:page.path.slice(1,-1)},props:{page}}));
+}
+const {page}=Astro.props;
+---
+<SourcePage page={page}/>
