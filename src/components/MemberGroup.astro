@@ -1,0 +1,25 @@
+---
+import MemberGrid from './MemberGrid.astro';
+import type { MemberGroup } from '../lib/members';
+import { membersInGroup } from '../lib/members';
+import { href } from '../lib/paths';
+
+const { group } = Astro.props as { group: MemberGroup };
+const members = membersInGroup(group.id);
+---
+
+<section class="directory-group" aria-labelledby={group.anchor} data-directory-group>
+  <div class="directory-group-heading">
+    <h3 id={group.anchor}>
+      {group.url ? <a href={href(group.url)}>{group.title}</a> : group.title}
+    </h3>
+    <span class="directory-count" aria-label={`${members.length} entries`}>
+      {members.length}
+    </span>
+  </div>
+  {members.length ? (
+    <MemberGrid members={members} />
+  ) : (
+    <p class="directory-empty-group">{group.emptyText || 'No members currently listed.'}</p>
+  )}
+</section>

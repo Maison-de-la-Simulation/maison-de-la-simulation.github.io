@@ -1,5 +1,19 @@
 ---
 import Base from '../layouts/Base.astro';
-import {href} from '../lib/content';
+import { href } from '../lib/content';
 ---
-<Base title="Our teams"><section class="page-head"><p class="eyebrow">RESEARCH & EXPERTISE</p><h1>The laboratory’s teams.</h1></section><section class="section"><a class="resource-link" id="soc" href={href('/science-of-computing/')}>Science of Computing <span>↗</span></a><a class="resource-link" id="sbc" href={href('/science-by-computing/')}>Science by Computing <span>↗</span></a></section></Base>
+
+<Base title="Our teams">
+  <section class="page-head">
+    <p class="eyebrow">RESEARCH & EXPERTISE</p>
+    <h1>The laboratory’s teams.</h1>
+  </section>
+  <section class="section">
+    <a class="resource-link" id="soc" href={href('/science-of-computing/')}>
+      Science of Computing <span>↗</span>
+    </a>
+    <a class="resource-link" id="sbc" href={href('/science-by-computing/')}>
+      Science by Computing <span>↗</span>
+    </a>
+  </section>
+</Base>

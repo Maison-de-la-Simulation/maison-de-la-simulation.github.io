@@ -1,8 +1,9 @@
 {
   "base": "/mdls-test/",
-  "html_pages": 215,
+  "html_pages": 216,
   "source_routes": 162,
   "additional_profiles": 59,
+  "editable_markdown_pages": 115,
   "assets": 80,
   "broken": [],
   "broken_anchors": [],

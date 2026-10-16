@@ -1,175 +1,280 @@
-# Maison de la Simulation — Astro / GitHub Pages
+# Modifier le site Maison de la Simulation
 
-A complete English-language redesign of the public Maison de la Simulation website. It includes modernised editorial content, the full directory, local scientific media, official institutional and partner logos, and a laser–plasma video credited to Francesco Massimo.
+Le contenu est réparti dans des fichiers lisibles. Les textes des pages sont en Markdown ;
+l’annuaire, les logiciels et les partenaires utilisent des données JSON. Les composants Astro
+s’occupent de l’affichage.
 
-## Run locally
+## Où modifier quoi ?
 
-Requires Node.js 22.12 or later; Node 22 LTS is recommended.
+| Modification                                                              | Fichier                                     |
+| ------------------------------------------------------------------------- | ------------------------------------------- |
+| Ajouter une personne, modifier son nom, sa fonction, sa photo ou son lien | `src/data/members.json`                     |
+| Renommer ou ajouter un groupe, modifier la photo d’équipe                 | `src/data/member-groups.json`               |
+| Titre et introduction de Members                                          | `src/content/pages/members.md`              |
+| Présentation du laboratoire                                               | `src/content/pages/laboratory.md`           |
+| Research / Science of Computing                                           | `src/content/pages/science-of-computing.md` |
+| Expertise / Science by Computing                                          | `src/content/pages/science-by-computing.md` |
+| Formations et cartes universitaires                                       | `src/content/pages/training.md`             |
+| Accès au laboratoire                                                      | `src/content/pages/visit.md`                |
+| Recrutement                                                               | `src/content/pages/jobs.md`                 |
+| Workshop sur l’IA agentique                                               | `src/content/events/agentic-ai-workshop.md` |
+| Choisir ou masquer l’événement Featured de l’accueil                      | `src/data/featured.json`                    |
+| Autres textes et blocs de l’accueil                                       | `src/pages/index.astro`                     |
+| Biographies personnelles existantes                                       | `src/content/profiles/`                     |
+| Portraits historiques                                                     | `src/content/portraits/`                    |
+| Cartes des logiciels                                                      | `src/data/software.json`                    |
+| Partenaires, liens et logos                                               | `src/data/partners.json`                    |
+| Logos des tutelles                                                        | `src/data/tutelles.json`                    |
+| Menu et pied de page                                                      | `src/layouts/Base.astro`                    |
+| Couleurs, tailles et mise en page                                         | `src/styles/global.css`                     |
+
+Les anciens fichiers `editorial.json`, `pages.json`, `translations.en.json` et
+`member-profiles.json` sont conservés dans `migration/legacy-content/` comme archives. Les
+modifications du site se font dans les fichiers indiqués ci-dessus.
+
+## Ajouter un membre
+
+Ouvrir `src/data/members.json` et ajouter un objet dans le tableau, à l’endroit où la carte doit
+apparaître dans son groupe :
+
+```json
+{
+  "id": "prenom-nom",
+  "name": "Prénom NOM",
+  "group": "soc",
+  "role": "Research engineer"
+}
+```
+
+Mettre une virgule entre deux objets du tableau. Le dernier objet n’a pas de virgule après lui. Les
+noms de champs et les chaînes JSON utilisent des guillemets doubles.
+
+- `id` : identifiant unique, en minuscules, sans accent ni espace, avec des tirets si nécessaire. Le
+  conserver quand le nom affiché change pour garder la même adresse de fiche.
+- `name` : nom tel qu’il doit apparaître sur la carte.
+- `group` : groupe choisi dans le tableau ci-dessous.
+- `role` : fonction affichée ; ce champ est facultatif.
+
+Une nouvelle carte apparaît au prochain build. Les compteurs, les initiales, le texte utilisé par la
+recherche et le lien vers `/member/prenom-nom/` sont calculés automatiquement. Une fiche locale est
+créée à partir du groupe et de la fonction lorsqu’il n’existe pas déjà de biographie.
+
+### Groupes disponibles
+
+| Valeur de `group` | Emplacement                          |
+| ----------------- | ------------------------------------ |
+| `leadership`      | Direction et assistance de direction |
+| `sbc`             | Permanents — Science by Computing    |
+| `soc`             | Permanents — Science of Computing    |
+| `coordination`    | Permanents — Coordination team       |
+| `external`        | Collaborateurs extérieurs            |
+| `postdocs`        | Contrats temporaires — Postdocs      |
+| `engineers`       | Contrats temporaires — Engineers     |
+| `fixed-term`      | Autres CDD                           |
+| `phd`             | Doctorants                           |
+| `trainees`        | Stagiaires                           |
+| `alumni`          | Anciens membres                      |
+
+Changer `group` déplace la carte. Par exemple, passer à `"group": "alumni"` la place parmi les
+anciens membres. L’ordre des objets dans `members.json` détermine l’ordre des cartes dans chaque
+groupe. Les groupes et leur ordre sont définis dans `member-groups.json`.
+
+### Photo, page personnelle et badge
+
+Ajouter les champs facultatifs utiles :
+
+```json
+{
+  "id": "prenom-nom",
+  "name": "Prénom NOM",
+  "group": "sbc",
+  "role": "Research engineer",
+  "image": "media/prenom-nom.jpg",
+  "url": "https://exemple.fr/page-personnelle/",
+  "badge": "Team leader"
+}
+```
+
+Pour la photo, déposer le fichier dans `public/media/prenom-nom.jpg`. Dans le JSON, utiliser
+`media/prenom-nom.jpg`, sans `public/`. Sans photo, les initiales sont affichées.
+
+Sans `url`, la carte renvoie vers la fiche locale automatique. Avec `url`, elle renvoie vers
+l’adresse indiquée : une URL `https://...` ou un chemin interne comme `/member/prenom-nom/`. Le
+badge est facultatif ; utiliser par exemple `Team leader` pour un responsable.
+
+Les champs `anchor` et `initials` présents sur certaines anciennes entrées servent respectivement
+aux liens directs existants et à des initiales particulières. Ils sont facultatifs.
+
+### Rédiger une biographie
+
+Pour personnaliser une fiche automatique, créer `src/content/profiles/prenom-nom.md` :
+
+```markdown
+---
+path: '/member/prenom-nom/'
+title: 'Prénom NOM'
+kind: 'member'
+---
+
+## Activities
+
+Description des activités, en anglais pour le site public.
+
+[Personal website](https://exemple.fr/)
+```
+
+Cette fiche prend la place de la fiche automatique. Les fichiers existants dans
+`src/content/profiles/` peuvent être modifiés directement. Pour une personne qui a déjà une
+biographie rédigée, mettre aussi son texte à jour si sa fonction ou sa situation change.
+
+## Modifier un texte
+
+Ouvrir le fichier `.md` de la page. Le bloc entre les deux lignes `---` contient le titre,
+l’introduction et les réglages. Le texte de la page se trouve juste après :
+
+```markdown
+---
+path: '/my-page/'
+title: 'Page title'
+intro: 'A short introduction.'
+---
+
+## Section title
+
+A paragraph with **important words** and a [link](https://exemple.fr/).
+
+- First item
+- Second item
+```
+
+Une ligne vide sépare deux paragraphes. `##` crée un titre de section, `###` un sous-titre. Les
+résumés utilisés par la recherche sont extraits automatiquement du contenu : aucun champ `text` ni
+champ `data-search` n’est à recopier.
+
+### Liens et images
+
+Dans un fichier Markdown, préfixer les liens internes et les médias locaux avec `__BASE__` pour que
+le site fonctionne aussi dans un sous-dossier GitHub Pages :
+
+```markdown
+[Members](__BASE__members/)
+
+[Contact](__BASE__contact/#contact-form)
+
+<img src="__BASE__media/illustration.png" alt="Description of the illustration" />
+```
+
+Les liens externes gardent leur URL complète. Dans `members.json`, les URL internes commencent
+simplement par `/` ; dans les champs `image` des fichiers de données, utiliser le chemin depuis
+`public/`, par exemple `media/photo.jpg`.
+
+## Ajouter une section à une page
+
+Copier ce bloc dans la page Markdown, après une autre section :
+
+```markdown
+<section class="editorial-section" id="new-topic">
+
+## New topic
+
+Description of this topic.
+
+[Project website](https://exemple.fr/)
+
+</section>
+```
+
+Conserver une ligne vide après la balise d’ouverture et avant la fermeture pour que le texte soit
+interprété comme du Markdown. Choisir un `id` unique sur la page.
+
+Quand un bloc `toc:` est présent en tête du fichier, ajouter une entrée si la nouvelle section doit
+apparaître dans le sommaire :
+
+```yaml
+- id: 'new-topic'
+  title: 'New topic'
+```
+
+Si un titre de section change, modifier aussi son `title` dans le bloc `toc` existant.
+
+Sans bloc `toc`, le sommaire se construit à partir des titres Markdown de niveau 2. Il apparaît
+quand il contient plus de deux entrées.
+
+## Ajouter une carte
+
+Les pages conservent quelques blocs HTML pour leurs grilles, logos et illustrations. Dans une grille
+`editorial-cards`, ajouter un bloc `article` :
+
+```html
+<div class="editorial-cards">
+  <article>
+    <h3>New project</h3>
+    <p>Description of the project.</p>
+    <a href="https://exemple.fr/">Project details →</a>
+  </article>
+</div>
+```
+
+Si la grille existe déjà, copier seulement le bloc `<article>...</article>` dedans. Pour une
+formation universitaire, copier une carte `university-card` dans `training.md`, puis modifier son
+titre, son établissement, sa description et son lien. Donner un `data-programme` différent à chaque
+carte.
+
+Les cartes des logiciels et des partenaires viennent de leurs fichiers JSON : copier un objet de
+`software.json` ou `partners.json` et modifier ses champs. Déposer le logo correspondant dans
+`public/` et utiliser son chemin relatif dans `image`.
+
+## Ajouter une page
+
+Créer un fichier comme `src/content/pages/my-project.md` avec l’exemple de métadonnées et de texte
+ci-dessus. Le champ `path` définit l’adresse ; il doit commencer et finir par `/` et être unique. Le
+nom du fichier peut être différent de l’adresse publique.
+
+La page apparaît automatiquement dans la recherche et les plans du site après compilation. Pour la
+rendre accessible depuis une page existante, ajouter un lien :
+
+```markdown
+[My project](__BASE__my-page/)
+```
+
+Pour un lien dans le menu principal, modifier la liste `nav` dans `src/layouts/Base.astro`.
+
+## Modifier l’événement Featured
+
+Le contenu du workshop actuel se trouve dans `src/content/events/agentic-ai-workshop.md`. Modifier
+`title` ou `eventDate` actualise aussi le titre et la date du bandeau de l’accueil. Utiliser une
+date ISO entre guillemets, par exemple `eventDate: '2026-12-03'`.
+
+`src/data/featured.json` choisit la page mise en avant et le libellé du bandeau. Mettre
+`"enabled": false` masque le bloc Featured. Pour un autre événement, créer sa page Markdown et
+indiquer son `path` dans ce fichier.
+
+Les anciennes annonces et la rubrique séminaires restent filtrées par `src/data/publication.json`.
+Pour un nouvel événement ordinaire, utiliser `kind: 'page'` et `label: 'Scientific workshop'` ; le
+champ `eventDate` reste disponible. Le workshop historique sur l’IA agentique est l’exception
+explicitement conservée dans `included_paths`.
+
+## Mettre en forme et vérifier
 
 ```bash
 npm ci
+npm run format
+npm run format:check
+npm run build
 npm run dev
 ```
 
-For a production build and local preview:
+`format` remet en forme les sources Astro, TypeScript, CSS, JSON et Markdown. Les snapshots
+historiques et les médias sont exclus. `build` signale notamment une adresse en double, un
+identifiant de membre incorrect ou un groupe inconnu. `dev` lance la prévisualisation locale.
 
-```bash
-npm run build
-npm run preview
-```
-
-The archive contains source code and media. `node_modules/` and `dist/` are generated by the commands above and are not included.
-
-## Deploy to GitHub Pages
-
-1. Create a repository in your GitHub organisation and upload the **contents of this folder**, including `.github/`, `package-lock.json` and `astro.config.mjs`.
-2. Use the `main` branch.
-3. In **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**.
-4. Push to `main`, or manually start **Deploy Astro to GitHub Pages** in Actions.
-5. Wait for deployment to complete; its URL appears in the workflow and in Settings → Pages.
-
-The workflow automatically reads the origin and base path returned by GitHub Pages. It supports a project repository at `/repository-name/`, an organisation repository at the domain root, and a custom domain.
-
-To build manually for a project path:
-
-```bash
-SITE_URL=https://maison-de-la-simulation.github.io BASE_PATH=/site-mdls npm run build
-```
-
-`mdls.github.io` requires the GitHub account or organisation named `mdls`. An organisation named `Maison-de-la-Simulation` can use `maison-de-la-simulation.github.io` or a custom domain.
-
-To use mdls.fr, configure **Settings → Pages → Custom domain**, follow GitHub’s DNS instructions and enable HTTPS. No repository, deployment or DNS setting has been changed to produce this archive.
-
-## Navigation
-
-| Label | Destination |
-| --- | --- |
-| Laboratory | `/laboratory/` |
-| Research | `/science-of-computing/` |
-| Expertise | `/science-by-computing/` |
-| Training | `/training/` |
-| Software | `/software/` |
-| Members | `/members/` |
-
-GitHub and LinkedIn icons appear immediately before Contact in the masthead.
-
-Research actions on the homepage go directly to Science of Computing. Expertise actions go directly to Science by Computing. Contact and search remain available alongside the six main entries.
-
-English URLs also include `/search/`, `/site-map/` and `/credits/`. Historical directory and laboratory routes continue to render local English pages. Withdrawn vacancies and seminar pages, including the former news listings, are no longer published.
-
-## Complete content migration
-
-The public sitemaps and WordPress API were inventoried on 15 October 2026:
-
-- 162 source routes inventoried; outdated vacancies, seminar pages and their listing routes are no longer published.
-- 11 WordPress pages and 16 posts: the Members post is the main directory; the remaining posts include 12 seminars and 3 vacancies.
-- 87 individual member records and 17 portrait pages.
-- All directory entries, modernised scientific descriptions and local document downloads.
-- 59 additional member profiles use only existing directory information; every directory name has a link.
-- 80 original local media files, including five PDFs, plus current parent-institution logos, eleven official partner identities, and the supplied video with a poster frame.
-
-All published website copy, headings, interfaces, forms and accessibility labels are in English. Names, postal addresses and official identities are retained; original archived PDFs and text within supplied scientific graphics remain unchanged.
-
-The modernised presentations replace the former expandable scientific background sections. No link or media embed returns to the retired WordPress website. External software repositories, publication services, personal websites and training registration services retain their external destinations.
-
-Raw source snapshots in `migration/` preserve provenance and are not published as website pages.
-
-## Official partner identities
-
-The partner grid contains exactly:
-
-1. École polytechnique
-2. Sorbonne University
-3. TGCC
-4. IDRIS
-5. CINES
-6. Inria
-7. CERFACS
-8. CC-FR
-9. RIKEN
-10. Forschungszentrum Jülich
-11. U.S. Department of Energy
-
-Files are copied from official institutional websites, checked on 16 October 2026. The École polytechnique and CC-FR vector logos are extracted from their official header SVGs. IDRIS uses the image currently served as `logo_IDRIS.png` by its official site. Colours and proportions are retained.
-
-The CERFACS identity is the logo distributed by its institutional partner ECMWF.
-
-See `src/data/partners.json` for names, links, local files and provenance. The four parent-institution logos remain beside the MdlS logo in the masthead and are configured in `src/data/tutelles.json`.
-
-## University teaching and scientific networks
-
-The Training page includes five compact programme cards with official programme URLs. The SoC introduction links to RT Calcul (formerly GDR Calcul) and GDR C4P and mentions the CEA Calcul intensif network. A native SVG icon matches the existing grey-and-orange thematic icons; Samuel Kokh’s name links to his homepage in the research section and directory. Source details are in `migration/university-and-networks.json`.
-
-## Life science expertise
-
-The Science by Computing page identifies Charles Prouveur as team leader. It includes “Life science”, highlighting the CEA–CAD computing infrastructure at the TGCC and linking to the profiles of Yves Vandenbrouck and Jean-Michel Batto. Names in the research and expertise contact lines link to known personal sites or local member profiles. The CAD identity is hosted locally. Project and image provenance are recorded in `migration/health-genomics.json`.
-
-## Homepage and recruitment
-
-The homepage carries the motto “Computing for science, science for computing”. The repeated joint-laboratory strip and featured seminar event have been removed; institutional logos remain in the masthead. Jobs links point visitors to the contact form or the laboratory’s LinkedIn account. Former vacancy pages, seminars and their listing pages are excluded from publication, search and site maps through `src/data/publication.json`. The older expandable travel directions are also removed.
-
-## Scientific video
-
-The supplied `LWFA_ionization_injection_HD_EuPRAXIA_longer.mp4` is shown on the homepage in full, without cropping, with the visible credit **“Credit: Francesco Massimo”**.
-
-The included H.264 web version is 1800 × 1290 pixels, 18.04 seconds and approximately 5.97 MB. The original uploaded file is unchanged. Playback is muted and looped, with native controls. The system’s reduced-motion preference pauses automatic playback.
-
-See `migration/video.json` for technical details and the original file checksum.
-
-## Editing the site
-
-- `src/data/editorial.json`: modern English page content, titles and introductions.
-- `src/data/translations.en.json`: English versions of imported content and archives.
-- `src/data/pages.json`: original source records, routes, categories and scientific text snapshots.
-- `src/data/member-profiles.json`: additional local profiles based on directory roles, teams and membership status, without inferred personal URLs or biographies.
-- `src/data/publication.json`: withdrawn content kinds and listing routes.
-- `src/data/software.json`: all six software descriptions, logos and links.
-- `src/data/partners.json`: the eleven partner identities and official sources.
-- `src/data/tutelles.json`: parent institutions and their logos.
-- `src/components/SourcePage.astro`: complete page, directory and archive layout.
-- `src/components/PartnerGrid.astro` and `src/lib/partners.ts`: shared partner grid.
-- `src/layouts/Base.astro`: masthead, six-entry menu and footer.
-- `src/pages/index.astro`: homepage and scientific video.
-- `src/styles/global.css`: responsive layout and styles.
-- `public/media/`, `public/brand/`, `public/partners/`, `public/video/`: self-hosted media.
-
-`__BASE__` in content is replaced with Astro’s configured base path during rendering. Keep this prefix on local media and internal links when editing JSON content.
-
-## Contact on static hosting
-
-GitHub Pages does not run the former PHP form. The native form keeps name, email, two enquiry subjects, message and an optional attachment.
-
-- Without an attachment, it prepares an email through `mailto:`.
-- With an attachment, it downloads an `.eml` draft including the file, up to 20 MB, for opening in a compatible email application.
-- The visitor reviews and sends the message; the website stores no form data and sends nothing automatically.
-
-The recipient is `pascal.tremblin@cea.fr`, the public director contact in UVSQ’s institutional directory. Change it in `src/components/ContactForm.astro` if required.
-
-## Validation
-
-Root and `/mdls-test/` builds have been checked for:
-
-- All published source routes, local media, internal links and anchors; withdrawn vacancy and seminar routes are absent.
-- English language declarations and interface copy.
-- The exact six-entry navigation and direct SoC/SbC destinations.
-- Eleven local partner identities and four parent-institution logos.
-- Preservation of all 140 directory list entries and two leadership contacts, including repeated entries present in the source.
-- A link on each of the 142 directory names, Charles Prouveur’s linked SbC leadership credit, and removal of the featured event.
-- A responsive Members directory with consistent portraits, team and status sections, and accent-insensitive filtering.
-- The scientific video and its visible Francesco Massimo credit.
-- Absence of requests to retired WordPress pages or media.
-
-Reports are stored in `migration/audit-root.json`, `migration/audit-subpath.json`, `migration/english-verification.json` and `migration/english-verification-subpath.json`.
-
-To rerun the checks, install the optional Python audit dependency; it is not required to build the website:
+Pour les contrôles des liens et du contenu, après le build :
 
 ```bash
 python3 -m pip install beautifulsoup4
-npm run build
 python3 scripts/audit-site.py
 python3 scripts/verify-editorial.py
 ```
 
-After building with `BASE_PATH=/mdls-test`, pass `/mdls-test/` to both audit scripts.
-
-Browser preview was unavailable in the development environment. Visual layout, mobile interaction and email draft opening still require a browser check before production deployment. Training uses links to the CC-FR and IDRIS catalogues and the Gray Scott School, with no dated session archive. Recruitment points to the contact form and LinkedIn. Publication dates are hidden, and outdated vacancies and seminars are no longer published.
+Après modification, committer les fichiers concernés, ainsi que `package-lock.json` si des
+dépendances ont changé. Le workflow GitHub Pages existant se charge de la publication.

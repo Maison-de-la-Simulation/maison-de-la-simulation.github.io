@@ -1,8 +1,8 @@
 {
-  "excluded_kinds": [
-    "job",
-    "seminar"
+  "included_paths": [
+    "/de-lassistance-a-lautonomie-limpact-de-lia-agentique-sur-les-processus-de-recherche/"
   ],
+  "excluded_kinds": ["job", "seminar"],
   "excluded_paths": [
     "/seminars/",
     "/category/seminar/",

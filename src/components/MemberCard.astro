@@ -1,0 +1,40 @@
+---
+import type { Member } from '../lib/members';
+import { memberInitials, memberSearchText, memberUrl } from '../lib/members';
+import { href } from '../lib/paths';
+
+const { member } = Astro.props as { member: Member };
+const url = memberUrl(member);
+const external = /^https?:\/\//.test(url);
+---
+
+<li class="member-card" data-member data-search={memberSearchText(member)} id={member.anchor}>
+  {member.image ? (
+    <img
+      class="member-avatar"
+      src={href(member.image)}
+      alt=""
+      width="56"
+      height="56"
+      loading="lazy"
+      decoding="async"
+    />
+  ) : (
+    <span class="member-avatar member-initials" aria-hidden="true">
+      {memberInitials(member)}
+    </span>
+  )}
+  <div class="member-card-content">
+    {member.badge && <span class="member-tag">{member.badge}</span>}
+    <p class="member-name">
+      <a
+        href={external ? url : href(url)}
+        target={external ? '_blank' : undefined}
+        rel={external ? 'noopener noreferrer' : undefined}
+      >
+        {member.name}
+      </a>
+    </p>
+    {member.role && <p class="member-role">{member.role}</p>}
+  </div>
+</li>

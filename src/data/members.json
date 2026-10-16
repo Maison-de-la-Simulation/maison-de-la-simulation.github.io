@@ -1,0 +1,897 @@
+[
+  {
+    "id": "pascal-tremblin",
+    "name": "Pascal TREMBLIN",
+    "group": "leadership",
+    "role": "CEA research director",
+    "badge": "Director",
+    "url": "https://www.wilder.diskstation.me/pascal-tremblin/",
+    "anchor": "director"
+  },
+  {
+    "id": "valerie-belle",
+    "name": "Valérie BELLE",
+    "group": "leadership",
+    "badge": "Executive assistant",
+    "image": "media/photo-valerie-belle-e1641566996186-ff82b9e488.jpeg",
+    "anchor": "executive-assistant"
+  },
+  {
+    "id": "charles-prouveur",
+    "name": "Charles PROUVEUR",
+    "group": "sbc",
+    "role": "CNRS research engineer",
+    "badge": "Team leader",
+    "image": "media/charles-prouveur-8ff313f318.jpeg"
+  },
+  {
+    "id": "edouard-audit",
+    "name": "Edouard AUDIT",
+    "group": "sbc",
+    "role": "CEA research director",
+    "image": "media/photo-edouard-audit-e1641567100661-264x300-fba036f36f.png"
+  },
+  {
+    "id": "jean-michel-batto",
+    "name": "Jean-Michel BATTO",
+    "group": "sbc",
+    "role": "CEA research director",
+    "anchor": "jean-michel-batto"
+  },
+  {
+    "id": "arturo-consoli",
+    "name": "Arturo CONSOLI",
+    "group": "sbc",
+    "role": "UVSQ associate professor"
+  },
+  {
+    "id": "mathieu-lobet",
+    "name": "Mathieu LOBET",
+    "group": "sbc",
+    "role": "CEA research scientist",
+    "image": "media/photo-mathieu-lobet-e1641567207507-300x300-fce361a631.jpeg",
+    "url": "https://orcid.org/0000-0003-1269-1825"
+  },
+  {
+    "id": "jean-bernard-maillet",
+    "name": "Jean-Bernard MAILLET",
+    "group": "sbc",
+    "role": "CEA research director"
+  },
+  {
+    "id": "juan-jose-silva-cuevas",
+    "name": "Juan Jose SILVA CUEVAS",
+    "group": "sbc",
+    "role": "CNRS research engineer"
+  },
+  {
+    "id": "riccardo-spezia",
+    "name": "Riccardo SPEZIA",
+    "group": "sbc",
+    "role": "CNRS senior research scientist",
+    "url": "https://fr-moser.cecam.org/"
+  },
+  {
+    "id": "yves-vandenbrouck",
+    "name": "Yves VANDENBROUCK",
+    "group": "sbc",
+    "role": "CEA research director",
+    "anchor": "yves-vandenbrouck"
+  },
+  {
+    "id": "yushan-wang",
+    "name": "Yushan WANG",
+    "group": "sbc",
+    "role": "CEA research scientist",
+    "image": "media/photo-yushan-wang-0c2de55a11.jpeg"
+  },
+  {
+    "id": "julien-bigot",
+    "name": "Julien BIGOT",
+    "group": "soc",
+    "role": "CEA research scientist",
+    "badge": "Team leader",
+    "image": "media/photo-julien-bigot-300x300-b9d3445f0f.jpeg",
+    "url": "https://work.julien-bigot.fr"
+  },
+  {
+    "id": "victor-alessandrini",
+    "name": "Victor ALESSANDRINI",
+    "group": "soc",
+    "role": "CNRS emeritus research scientist",
+    "image": "media/photo-victor-alessandrini-809da73550.jpeg"
+  },
+  {
+    "id": "yuuichi-asahi",
+    "name": "Yuuichi ASAHI",
+    "group": "soc",
+    "role": "CEA research scientist"
+  },
+  {
+    "id": "simplice-donfack",
+    "name": "Simplice DONFACK",
+    "group": "soc",
+    "role": "CNRS research engineer",
+    "image": "media/photo-simplice-donfack-9333e0d636.jpeg"
+  },
+  {
+    "id": "thomas-dufaud",
+    "name": "Thomas DUFAUD",
+    "group": "soc",
+    "role": "UVSQ associate professor",
+    "image": "media/photo-thomas-dufaud-8db7c0317f.jpeg"
+  },
+  {
+    "id": "nahid-emad",
+    "name": "Nahid EMAD",
+    "group": "soc",
+    "role": "UVSQ full professor",
+    "image": "media/photo-nahid-emad-e1641566563425-3ccc2bb547.jpeg"
+  },
+  {
+    "id": "samuel-kokh",
+    "name": "Samuel KOKH",
+    "group": "soc",
+    "role": "CEA research director",
+    "url": "https://skokh.pages.math.cnrs.fr/homepage/"
+  },
+  {
+    "id": "martial-mancip",
+    "name": "Martial MANCIP",
+    "group": "soc",
+    "role": "CNRS research engineer",
+    "image": "media/photo-martial-mancip-e1641567307278-3fcb6807b9.jpeg"
+  },
+  {
+    "id": "benoit-martin",
+    "name": "Benoît MARTIN",
+    "group": "soc",
+    "role": "CEA research scientist"
+  },
+  {
+    "id": "thomas-padioleau",
+    "name": "Thomas PADIOLEAU",
+    "group": "soc",
+    "role": "CEA research scientist",
+    "image": "media/thomas-padioleau-300x300-68cf52e8dd.jpg"
+  },
+  {
+    "id": "christophe-calvin",
+    "name": "Christophe CALVIN",
+    "group": "coordination",
+    "role": "CEA research director",
+    "badge": "Team leader"
+  },
+  {
+    "id": "france-boillod-cerneux",
+    "name": "France BOILLOD-CERNEUX",
+    "group": "coordination",
+    "role": "CEA research scientist"
+  },
+  {
+    "id": "valerie-brenner",
+    "name": "Valérie BRENNER",
+    "group": "coordination",
+    "role": "CEA research director"
+  },
+  {
+    "id": "julien-thelot",
+    "name": "Julien THELOT",
+    "group": "coordination",
+    "role": "CEA permanent staff"
+  },
+  {
+    "id": "marina-leboulanger",
+    "name": "Marina LEBOULANGER",
+    "group": "external",
+    "role": "Dicio-Conflatio"
+  },
+  {
+    "id": "jong-hern-mun",
+    "name": "Jong-Hern MUN",
+    "group": "external",
+    "role": "Dicio-Conflatio"
+  },
+  {
+    "id": "jeremy-faure",
+    "name": "Jeremy FAURE",
+    "group": "external",
+    "role": "Dicio-Conflatio"
+  },
+  {
+    "id": "yann-beaujeault-taudiere",
+    "name": "Yann BEAUJEAULT-TAUDIERE",
+    "group": "postdocs"
+  },
+  {
+    "id": "marc-chung-to-sang",
+    "name": "Marc CHUNG TO SANG",
+    "group": "postdocs"
+  },
+  {
+    "id": "alwin-philippe",
+    "name": "Alwin PHILIPPE",
+    "group": "postdocs"
+  },
+  {
+    "id": "julian-auriac",
+    "name": "Julian AURIAC",
+    "group": "engineers"
+  },
+  {
+    "id": "iole-bolognesi",
+    "name": "Iole BOLOGNESI",
+    "group": "engineers"
+  },
+  {
+    "id": "thomas-bouvier",
+    "name": "Thomas BOUVIER",
+    "group": "engineers"
+  },
+  {
+    "id": "paul-gannay",
+    "name": "Paul GANNAY",
+    "group": "engineers"
+  },
+  {
+    "id": "sylvain-joube",
+    "name": "Sylvain JOUBE",
+    "group": "engineers"
+  },
+  {
+    "id": "hariprasad-kannan",
+    "name": "Hariprasad KANNAN",
+    "group": "engineers"
+  },
+  {
+    "id": "benoit-malezieux",
+    "name": "Benoît MALEZIEUX",
+    "group": "engineers"
+  },
+  {
+    "id": "jacques-morice",
+    "name": "Jacques MORICE",
+    "group": "engineers"
+  },
+  {
+    "id": "trevis-morvany",
+    "name": "Trévis MORVANY",
+    "group": "engineers"
+  },
+  {
+    "id": "sage-osborne",
+    "name": "Sage OSBORNE",
+    "group": "engineers"
+  },
+  {
+    "id": "guillaume-salle",
+    "name": "Guillaume SALLE",
+    "group": "engineers"
+  },
+  {
+    "id": "adrien-taberner",
+    "name": "Adrien TABERNER",
+    "group": "engineers"
+  },
+  {
+    "id": "radjasouria-vinayagame",
+    "name": "Radjasouria VINAYAGAME",
+    "group": "engineers"
+  },
+  {
+    "id": "guigone-camus",
+    "name": "Guigone CAMUS",
+    "group": "fixed-term"
+  },
+  {
+    "id": "celia-ioulain",
+    "name": "Célia IOULAIN",
+    "group": "fixed-term"
+  },
+  {
+    "id": "thierry-antoun",
+    "name": "Thierry ANTOUN",
+    "group": "phd"
+  },
+  {
+    "id": "ulysse-duvillier",
+    "name": "Ulysse DUVILLIER",
+    "group": "phd"
+  },
+  {
+    "id": "ester-el-khoury",
+    "name": "Ester El KHOURY",
+    "group": "phd"
+  },
+  {
+    "id": "melissa-larbi",
+    "name": "Melissa LARBI",
+    "group": "phd"
+  },
+  {
+    "id": "francois-xavier-mordant",
+    "name": "François-Xavier MORDANT",
+    "group": "phd"
+  },
+  {
+    "id": "petro-voloshyn",
+    "name": "Petro VOLOSHYN",
+    "group": "phd"
+  },
+  {
+    "id": "ivan-lucas",
+    "name": "Ivan LUCAS",
+    "group": "phd"
+  },
+  {
+    "id": "lucas-lablanche",
+    "name": "Lucas LABLANCHE",
+    "group": "trainees"
+  },
+  {
+    "id": "jean-marc-lude",
+    "name": "Jean-Marc LUDE",
+    "group": "alumni",
+    "role": "PhD"
+  },
+  {
+    "id": "mathieu-salanne",
+    "name": "Mathieu SALANNE",
+    "group": "alumni",
+    "role": "CNRS research scientist"
+  },
+  {
+    "id": "simon-el-ouafa",
+    "name": "Simon EL-OUAFA",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "paul-regnault",
+    "name": "Paul REGNAULT",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "kevin-peyen",
+    "name": "Kevin PEYEN",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "lou-roussel-hard",
+    "name": "Lou ROUSSEL-HARD",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "aymeric-millan",
+    "name": "Aymeric MILLAN",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "renaud-assemien",
+    "name": "Renaud ASSEMIEN",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "marc-baboulin",
+    "name": "Marc BABOULIN",
+    "group": "alumni",
+    "role": "Univ. Paris-Saclay full professor"
+  },
+  {
+    "id": "pierre-elliott-becue",
+    "name": "Pierre-Elliott BECUE",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2018BORD0352"
+  },
+  {
+    "id": "anders-bergman",
+    "name": "Anders BERGMAN",
+    "group": "alumni",
+    "role": "Visiting associate professor"
+  },
+  {
+    "id": "nourredine-bertrand",
+    "name": "Nourredine BERTRAND",
+    "group": "alumni",
+    "role": "Trainee"
+  },
+  {
+    "id": "philippe-bigeon",
+    "name": "Philippe BIGEON",
+    "group": "alumni",
+    "role": "CEA project officer"
+  },
+  {
+    "id": "helene-bloch",
+    "name": "Hélène BLOCH",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2021UPASP074"
+  },
+  {
+    "id": "daniel-borgis",
+    "name": "Daniel BORGIS",
+    "group": "alumni",
+    "role": "CNRS senior research scientist",
+    "image": "media/photo-daniel-borgis-247x300-d8f7409028.png",
+    "url": "https://scholar.google.com/citations?hl=fr&user=kBjtGmUAAAAJ"
+  },
+  {
+    "id": "merieme-bourenane",
+    "name": "Merieme BOURENANE",
+    "group": "alumni",
+    "role": "Trainee"
+  },
+  {
+    "id": "remi-bourgeois",
+    "name": "Rémi BOURGEOIS",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "mario-burbano",
+    "name": "Mario BURBANO",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "sebastien-cayrols",
+    "name": "Sebastien CAYROLS",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2019SORUS479"
+  },
+  {
+    "id": "ahai-chen",
+    "name": "Ahai CHEN",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "langshi-chen",
+    "name": "Langshi CHEN",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2015LIL10114"
+  },
+  {
+    "id": "simon-daley-yates",
+    "name": "Simon DALEY-YATES",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "maxime-delorme",
+    "name": "Maxime DELORME",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "julien-derouillat",
+    "name": "Julien DEROUILLAT",
+    "group": "alumni",
+    "role": "CEA research engineer"
+  },
+  {
+    "id": "lu-ding",
+    "name": "Lu DING",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "mamadou-abdoulaye-diop",
+    "name": "Mamadou Abdoulaye DIOP",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/s193541"
+  },
+  {
+    "id": "dominik-domin",
+    "name": "Dominik DOMIN",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "karen-druart",
+    "name": "Karen DRUART",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2016SACLX080"
+  },
+  {
+    "id": "florence-drui",
+    "name": "Florence DRUI",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2017SACLC033"
+  },
+  {
+    "id": "arnaud-durocher",
+    "name": "Arnaud DUROCHER",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2018BORD0423"
+  },
+  {
+    "id": "ksander-ejjaaouani",
+    "name": "Ksander EJJAAOUANI",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2019STRAD037"
+  },
+  {
+    "id": "sophie-felix",
+    "name": "Sophie FELIX",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2014PA112346"
+  },
+  {
+    "id": "aurelien-falco",
+    "name": "Aurélien FALCO",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "jose-alberto-fonseca-castillo",
+    "name": "Jose-Alberto FONSECA CASTILLO",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "mohamed-gaalich",
+    "name": "Mohamed GAALICH",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "cedric-gageat",
+    "name": "Cédric GAGEAT",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2017PSLEE047"
+  },
+  {
+    "id": "thibault-gasc",
+    "name": "Thibault GASC",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2016SACLN063"
+  },
+  {
+    "id": "benjamin-gerbe",
+    "name": "Benjamin GERBE",
+    "group": "alumni",
+    "role": "Trainee"
+  },
+  {
+    "id": "giorgio-giorgiani",
+    "name": "Giorgio GIORGIANI",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "nathalie-girard",
+    "name": "Nathalie GIRARD",
+    "group": "alumni",
+    "role": "Project officer"
+  },
+  {
+    "id": "vitaly-gorelov",
+    "name": "Vitaly GORELOV",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2020UPASF002"
+  },
+  {
+    "id": "amal-gueroudji",
+    "name": "Amal GUEROUDJI",
+    "group": "alumni",
+    "role": "PhD student",
+    "image": "media/amal-gueroudji-e1641566484970-300x300-c2188a25c6.png"
+  },
+  {
+    "id": "bilal-guirre",
+    "name": "Bilal GUIRRE",
+    "group": "alumni",
+    "role": "CDD"
+  },
+  {
+    "id": "matthieu-haefela",
+    "name": "Matthieu HAEFELE",
+    "group": "alumni",
+    "role": "CNRS research engineer"
+  },
+  {
+    "id": "karim-hasnaoui",
+    "name": "Karim HASNAOUI",
+    "group": "alumni",
+    "role": "CNRS research engineer"
+  },
+  {
+    "id": "ye-hong",
+    "name": "Yé HONG",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2019SACLS262"
+  },
+  {
+    "id": "olivier-iffrig",
+    "name": "Olivier IFFRIG",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "pauline-imbert",
+    "name": "Pauline IMBERT",
+    "group": "alumni",
+    "role": "Trainee"
+  },
+  {
+    "id": "haithem-kallala",
+    "name": "Haithem KALLALA",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2020UPASS052"
+  },
+  {
+    "id": "esra-karakas",
+    "name": "Esra KARAKAS",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2016SACLX012"
+  },
+  {
+    "id": "michel-kern",
+    "name": "Michel KERN",
+    "group": "alumni",
+    "role": "Inria research scientist"
+  },
+  {
+    "id": "pierre-kestener",
+    "name": "Pierre KESTENER",
+    "group": "alumni",
+    "role": "CEA research scientist"
+  },
+  {
+    "id": "salem-khellal",
+    "name": "Salem KHELLAL",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "rudi-leroy",
+    "name": "Rudi LEROY",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://tel.archives-ouvertes.fr/tel-01248563"
+  },
+  {
+    "id": "zhujie-li",
+    "name": "Zhujie LI",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2018SORUS482"
+  },
+  {
+    "id": "liang-liang",
+    "name": "Liang LIANG",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "zifan-liu",
+    "name": "Zifan LIU",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2015VERS001V"
+  },
+  {
+    "id": "rehan-malak",
+    "name": "Rehan MALAK",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2016AIXM4089"
+  },
+  {
+    "id": "abel-marin-lafleche",
+    "name": "Abel MARIN-LAFLECHE",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "francesco-massimo",
+    "name": "Francesco MASSIMO",
+    "group": "alumni"
+  },
+  {
+    "id": "trinidad-mendez-morales",
+    "name": "Trinidad MENDEZ-MORALES",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "sara-moukir",
+    "name": "Sara MOUKIR",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "florent-nyberg",
+    "name": "Florent NYBERG",
+    "group": "alumni",
+    "role": "Trainee",
+    "image": "media/photo-florent-nyberg-959195abd0.jpeg"
+  },
+  {
+    "id": "malyka-orizono-cysique",
+    "name": "Malyka ORIZONO-CYSIQUE",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "yacine-ould-rouis",
+    "name": "Yacine OULD-ROUIS",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "cihui-pan",
+    "name": "Cihui PAN",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2015SACLV020"
+  },
+  {
+    "id": "alessia-perilli",
+    "name": "Alessia PERILLI",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "serge-petiton",
+    "name": "Serge PETITON",
+    "group": "alumni",
+    "role": "Univ. de Lille full professor"
+  },
+  {
+    "id": "quentin-petit",
+    "name": "Quentin PETIT",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "carlo-pierleoni",
+    "name": "Carlo PIERLEONI",
+    "group": "alumni",
+    "role": "Visiting associate professor"
+  },
+  {
+    "id": "mathilde-poveda",
+    "name": "Mathilde POVEDA",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "pierre-antoine-raclius",
+    "name": "Pierre-Antoine RACLIUS",
+    "group": "alumni",
+    "role": "Trainee"
+  },
+  {
+    "id": "corentin-roussel",
+    "name": "Corentin ROUSSEL",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "lou-roussel-hard",
+    "name": "Lou ROUSSEL-HARD",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "fabien-rozar",
+    "name": "Fabien ROZAR",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2015BORD0211"
+  },
+  {
+    "id": "michele-ruggeri",
+    "name": "Michele RUGGERI",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "sarah-saadouni",
+    "name": "Sarah SAADOUNI",
+    "group": "alumni",
+    "role": "Trainee",
+    "image": "media/photo-de-moi-6c53d25683.jpg"
+  },
+  {
+    "id": "felix-sainsbury-martinez",
+    "name": "Felix SAINSBURY-MARTINEZ",
+    "group": "alumni",
+    "role": "Postdoc"
+  },
+  {
+    "id": "louis-sarthou",
+    "name": "Louis SARTHOU",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "vineet-soni",
+    "name": "Vineet SONI",
+    "group": "alumni",
+    "role": "Engineer"
+  },
+  {
+    "id": "maxime-stauffert",
+    "name": "Maxime STAUFFERT",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2018SACLV045"
+  },
+  {
+    "id": "jeaniffer-vides",
+    "name": "Jeaniffer VIDES",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2014NICE4077"
+  },
+  {
+    "id": "viatcheslav-vostrikov",
+    "name": "Viatcheslav VOSTRIKOV",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "pascal-wang",
+    "name": "Pascal WANG",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "yunsong-wang",
+    "name": "Yunsong WANG",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2017SACLX090"
+  },
+  {
+    "id": "feng-xing",
+    "name": "Feng XING",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2014LIL10127"
+  },
+  {
+    "id": "fan-ye",
+    "name": "Fan YE",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2015LIL10169"
+  },
+  {
+    "id": "zineb-ziani",
+    "name": "Zineb ZIANI",
+    "group": "alumni",
+    "role": "PhD student"
+  },
+  {
+    "id": "ziqiang-zou",
+    "name": "Ziqiang ZOU",
+    "group": "alumni",
+    "role": "PhD student",
+    "url": "https://theses.fr/2020UPAST057"
+  }
+]

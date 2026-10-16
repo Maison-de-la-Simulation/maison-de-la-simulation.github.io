@@ -1,0 +1,12 @@
+---
+import MemberCard from './MemberCard.astro';
+import type { Member } from '../lib/members';
+
+const { members, compact = false } = Astro.props as { members: Member[]; compact?: boolean };
+---
+
+<ul class:list={['member-grid', { 'member-grid-compact': compact }]}>
+  {members.map((member) => (
+    <MemberCard member={member} />
+  ))}
+</ul>

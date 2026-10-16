@@ -1,0 +1,70 @@
+---
+import MemberGrid from './MemberGrid.astro';
+import MemberGroup from './MemberGroup.astro';
+import { directoryConfig, membersInGroup } from '../lib/members';
+import { href } from '../lib/paths';
+
+const { sections, photo } = directoryConfig;
+---
+
+<div class="members-directory" id="member-directory">
+  <nav class="directory-sections" aria-label="Directory sections">
+    {sections.map((section) => (
+      <a href={`#${section.id}`}>{section.title}</a>
+    ))}
+  </nav>
+
+  {sections.map((section) => (
+    <section
+      class:list={[
+        'directory-section',
+        {
+          'directory-leadership': section.layout === 'leadership',
+          'directory-former': section.layout === 'compact',
+        },
+      ]}
+      aria-labelledby={section.id}
+      data-directory-section
+      data-directory-group={section.layout === 'compact' ? true : undefined}
+    >
+      {section.layout === 'leadership' ? (
+        <>
+          <div data-directory-group>
+            <h2 id={section.id}>{section.title}</h2>
+            <MemberGrid members={membersInGroup(section.groups[0].id)} />
+          </div>
+          <figure class="directory-photo">
+            <img
+              src={href(photo.image)}
+              alt={photo.alt}
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+            />
+            <figcaption>{photo.caption}</figcaption>
+          </figure>
+        </>
+      ) : section.layout === 'compact' ? (
+        <>
+          <div class="directory-group-heading">
+            <h2 id={section.id}>{section.title}</h2>
+            <span
+              class="directory-count"
+              aria-label={`${membersInGroup(section.groups[0].id).length} entries`}
+            >
+              {membersInGroup(section.groups[0].id).length}
+            </span>
+          </div>
+          <MemberGrid members={membersInGroup(section.groups[0].id)} compact />
+        </>
+      ) : (
+        <>
+          <h2 id={section.id}>{section.title}</h2>
+          {section.groups.map((group) => (
+            <MemberGroup group={group} />
+          ))}
+        </>
+      )}
+    </section>
+  ))}
+</div>

@@ -1,0 +1,133 @@
+[
+  {
+    "path": "/category/job/",
+    "title": "Join us",
+    "contentFrom": "/jobs/"
+  },
+  {
+    "path": "/category/job/thesis/",
+    "title": "Join us",
+    "contentFrom": "/jobs/"
+  },
+  {
+    "path": "/category/member/",
+    "title": "Members"
+  },
+  {
+    "path": "/category/non-classe/",
+    "title": "Other publications"
+  },
+  {
+    "path": "/category/seminar/",
+    "title": "Seminars"
+  },
+  {
+    "path": "/category/seminar/seminaire-futur/",
+    "title": "Upcoming seminars"
+  },
+  {
+    "path": "/category/seminar/seminaire-passe/",
+    "title": "Past seminars"
+  },
+  {
+    "path": "/glossary/",
+    "title": "Portraits"
+  },
+  {
+    "path": "/member/",
+    "title": "Member profiles",
+    "classes": ["member_category-postdoc", "member_location-post-doc"]
+  },
+  {
+    "path": "/member_category/alumni/",
+    "title": "Alumni"
+  },
+  {
+    "path": "/member_category/assistante-de-direction/",
+    "title": "Executive assistants"
+  },
+  {
+    "path": "/member_category/associate-professor/",
+    "title": "Associate professors"
+  },
+  {
+    "path": "/member_category/deputy-director/",
+    "title": "Deputy directors"
+  },
+  {
+    "path": "/member_category/director/",
+    "title": "Directors"
+  },
+  {
+    "path": "/member_category/engineer/",
+    "title": "Engineers"
+  },
+  {
+    "path": "/member_category/intern/",
+    "title": "Interns"
+  },
+  {
+    "path": "/member_category/member/",
+    "title": "Members"
+  },
+  {
+    "path": "/member_category/phd/",
+    "title": "PhD students"
+  },
+  {
+    "path": "/member_category/postdoc/",
+    "title": "Postdoctoral researchers"
+  },
+  {
+    "path": "/member_category/professor/",
+    "title": "Professors"
+  },
+  {
+    "path": "/member_category/project-manager/",
+    "title": "Project managers"
+  },
+  {
+    "path": "/member_category/research-director/",
+    "title": "Research directors"
+  },
+  {
+    "path": "/member_category/research-engineer/",
+    "title": "Research engineers"
+  },
+  {
+    "path": "/member_location/alumni/",
+    "title": "Alumni"
+  },
+  {
+    "path": "/member_location/deputy-director/",
+    "title": "Deputy directors"
+  },
+  {
+    "path": "/member_location/director/",
+    "title": "Directors"
+  },
+  {
+    "path": "/member_location/executive-assistant/",
+    "title": "Executive assistants"
+  },
+  {
+    "path": "/member_location/membres/",
+    "title": "Members"
+  },
+  {
+    "path": "/member_location/phd-students/",
+    "title": "PhD students"
+  },
+  {
+    "path": "/member_location/post-doc/",
+    "title": "Postdoctoral researchers"
+  },
+  {
+    "path": "/member_location/research-engineer/",
+    "title": "Research engineers"
+  },
+  {
+    "path": "/tooltips_categories/member/",
+    "title": "Portraits"
+  }
+]

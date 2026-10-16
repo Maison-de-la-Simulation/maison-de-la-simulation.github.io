@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "html_pages_checked": 215,
+  "html_pages_checked": 216,
   "source_routes": 162,
   "navigation": [
     [
@@ -41,11 +41,11 @@
     "Forschungszentrum Jülich",
     "U.S. Department of Energy"
   ],
-  "directory_entries_checked": 140,
+  "directory_entries_checked": 142,
   "linked_directory_entries": 142,
   "missing_directory_names": [],
   "sbc_team_leader": "Charles Prouveur",
-  "homepage_featured_event_removed": true,
+  "featured_workshop": "/de-lassistance-a-lautonomie-limpact-de-lia-agentique-sur-les-processus-de-recherche/",
   "video_credit": "Francesco Massimo",
   "residual_french_interface_text": [],
   "base": "/mdls-test/"

@@ -1,11 +1,22 @@
 ---
 import SourcePage from '../components/SourcePage.astro';
-import {content as pages} from '../lib/content';
-const reserved=new Set(['/','/laboratoire/','/recherche/','/logiciels/','/formations/','/contact/','/sources/','/recherche-site/']);
-export function getStaticPaths(){
- const reserved=new Set(['/','/laboratoire/','/recherche/','/logiciels/','/formations/','/contact/','/sources/','/recherche-site/']);
- return pages.filter(p=>!reserved.has(p.path)).map(page=>({params:{path:page.path.slice(1,-1)},props:{page}}));
+import { content as pages } from '../lib/content';
+export function getStaticPaths() {
+  const reserved = new Set([
+    '/',
+    '/laboratoire/',
+    '/recherche/',
+    '/logiciels/',
+    '/formations/',
+    '/contact/',
+    '/sources/',
+    '/recherche-site/',
+  ]);
+  return pages
+    .filter((p) => !reserved.has(p.path))
+    .map((page) => ({ params: { path: page.path.slice(1, -1) }, props: { page } }));
 }
-const {page}=Astro.props;
+const { page } = Astro.props;
 ---
-<SourcePage page={page}/>
+
+<SourcePage page={page} />

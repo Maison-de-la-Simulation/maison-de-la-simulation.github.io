@@ -1,0 +1,107 @@
+{
+  "sections": [
+    {
+      "id": "leadership",
+      "title": "Leadership",
+      "layout": "leadership",
+      "groups": [
+        {
+          "id": "leadership",
+          "anchor": "leadership",
+          "title": "Leadership",
+          "location": "membres"
+        }
+      ]
+    },
+    {
+      "id": "permanent-members",
+      "title": "Permanent members",
+      "layout": "groups",
+      "groups": [
+        {
+          "id": "sbc",
+          "anchor": "science-by-computing-team",
+          "title": "Science by Computing",
+          "url": "/science-by-computing/",
+          "location": "membres"
+        },
+        {
+          "id": "soc",
+          "anchor": "science-of-computing-team",
+          "title": "Science of Computing",
+          "url": "/science-of-computing/",
+          "location": "membres"
+        },
+        {
+          "id": "coordination",
+          "anchor": "coordination-team",
+          "title": "Coordination team",
+          "location": "membres"
+        },
+        {
+          "id": "external",
+          "anchor": "external-collaborators",
+          "title": "External collaborators",
+          "location": "membres"
+        }
+      ]
+    },
+    {
+      "id": "fixed-term-members",
+      "title": "Fixed-term members",
+      "layout": "groups",
+      "groups": [
+        {
+          "id": "postdocs",
+          "anchor": "postdocs",
+          "title": "Postdocs",
+          "category": "postdoc"
+        },
+        {
+          "id": "engineers",
+          "anchor": "engineers",
+          "title": "Engineers",
+          "category": "engineer"
+        },
+        {
+          "id": "fixed-term",
+          "anchor": "cdd",
+          "title": "Other fixed-term contracts"
+        },
+        {
+          "id": "phd",
+          "anchor": "phd-students",
+          "title": "PhD students",
+          "category": "phd"
+        },
+        {
+          "id": "trainees",
+          "anchor": "trainees",
+          "title": "Trainees",
+          "category": "intern",
+          "emptyText": "No trainees currently listed."
+        }
+      ]
+    },
+    {
+      "id": "former-members",
+      "title": "Former members",
+      "layout": "compact",
+      "groups": [
+        {
+          "id": "alumni",
+          "anchor": "former-members",
+          "title": "Former members",
+          "location": "alumni"
+        }
+      ]
+    }
+  ],
+  "photo": {
+    "image": "media/mds-0031-b9e0219156.jpg",
+    "alt": "Members of Maison de la Simulation at the laboratory",
+    "width": 1920,
+    "height": 1280,
+    "caption": "Maison de la Simulation · Paris-Saclay"
+  }
+}

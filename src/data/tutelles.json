@@ -1,6 +1,38 @@
 [
-  {"name":"CEA","url":"https://www.cea.fr/","image":"brand/cea.jpg","width":512,"height":512,"source":"https://www.cea.fr/PublishingImages/cea.jpg","verified":"2026-10-16"},
-  {"name":"CNRS","url":"https://www.cnrs.fr/","image":"brand/cnrs.svg","width":115,"height":115,"source":"https://www.cnrs.fr/sites/default/files/logo/logo.svg","verified":"2026-10-16"},
-  {"name":"Université Paris-Saclay","url":"https://www.universite-paris-saclay.fr/","image":"brand/paris-saclay.svg","width":240,"height":108,"source":"https://www.universite-paris-saclay.fr/sites/default/files/media/2019-12/logo-ups.svg","verified":"2026-10-16"},
-  {"name":"Université de Versailles Saint-Quentin-en-Yvelines","url":"https://www.uvsq.fr/","image":"brand/uvsq.png","width":371,"height":200,"source":"https://www.uvsq.fr/medias/photo/logo-uvsq-2020-rvb_1578588720289-png?ID_FICHE=213209&INLINE=FALSE","verified":"2026-10-16"}
+  {
+    "name": "CEA",
+    "url": "https://www.cea.fr/",
+    "image": "brand/cea.jpg",
+    "width": 512,
+    "height": 512,
+    "source": "https://www.cea.fr/PublishingImages/cea.jpg",
+    "verified": "2026-10-16"
+  },
+  {
+    "name": "CNRS",
+    "url": "https://www.cnrs.fr/",
+    "image": "brand/cnrs.svg",
+    "width": 115,
+    "height": 115,
+    "source": "https://www.cnrs.fr/sites/default/files/logo/logo.svg",
+    "verified": "2026-10-16"
+  },
+  {
+    "name": "Université Paris-Saclay",
+    "url": "https://www.universite-paris-saclay.fr/",
+    "image": "brand/paris-saclay.svg",
+    "width": 240,
+    "height": 108,
+    "source": "https://www.universite-paris-saclay.fr/sites/default/files/media/2019-12/logo-ups.svg",
+    "verified": "2026-10-16"
+  },
+  {
+    "name": "Université de Versailles Saint-Quentin-en-Yvelines",
+    "url": "https://www.uvsq.fr/",
+    "image": "brand/uvsq.png",
+    "width": 371,
+    "height": 200,
+    "source": "https://www.uvsq.fr/medias/photo/logo-uvsq-2020-rvb_1578588720289-png?ID_FICHE=213209&INLINE=FALSE",
+    "verified": "2026-10-16"
+  }
 ]

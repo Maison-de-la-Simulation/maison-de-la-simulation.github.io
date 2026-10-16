@@ -1,9 +1,54 @@
 ---
 import Base from '../layouts/Base.astro';
-import {content,href} from '../lib/content';
-const results=content.filter(p=>!['archive','home'].includes(p.kind));
+import { content, href } from '../lib/content';
+const results = content.filter((p) => !['archive', 'home'].includes(p.kind));
 ---
-<Base title="Search"><section class="page-head"><p class="eyebrow">EXPLORE THE WEBSITE</p><h1>What are you looking for?</h1><label class="site-search-label" for="site-search">A name, a software project or a topic</label><input id="site-search" type="search" placeholder="Kokkos, plasmas, training…" autofocus/></section><section class="section"><p id="search-count" role="status" aria-live="polite"></p><div class="search-results">{results.map(p=><article data-text={(p.title+' '+p.searchText).toLowerCase()}><h2><a href={href(p.path)}>{p.title} →</a></h2><p>{p.intro||p.text.slice(0,190)+(p.text.length>190?'…':'')}</p></article>)}</div></section></Base>
+
+<Base title="Search">
+  <section class="page-head">
+    <p class="eyebrow">EXPLORE THE WEBSITE</p>
+    <h1>What are you looking for?</h1>
+    <label class="site-search-label" for="site-search">
+      A name, a software project or a topic
+    </label>
+    <input id="site-search" type="search" placeholder="Kokkos, plasmas, training…" autofocus />
+  </section>
+  <section class="section">
+    <p id="search-count" role="status" aria-live="polite"></p>
+    <div class="search-results">
+      {results.map((p) => (
+        <article data-text={(p.title + ' ' + p.searchText).toLowerCase()}>
+          <h2>
+            <a href={href(p.path)}>{p.title} →</a>
+          </h2>
+          <p>{p.intro || p.text.slice(0, 190) + (p.text.length > 190 ? '…' : '')}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>
 <script>
-const input=document.querySelector<HTMLInputElement>('#site-search');const articles=[...document.querySelectorAll<HTMLElement>('.search-results article')];const normalize=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();function update(){const query=normalize(input?.value.trim()||'');let count=0;articles.forEach(a=>{const match=!query||normalize(a.dataset.text||'').includes(query);a.hidden=!match;if(match)count++;});const label=document.querySelector('#search-count');if(label)label.textContent=count+' results';}if(input){input.value=new URLSearchParams(location.search).get('q')||'';input.addEventListener('input',update);update();}
+  const input = document.querySelector<HTMLInputElement>('#site-search');
+  const articles = [...document.querySelectorAll<HTMLElement>('.search-results article')];
+  const normalize = (s: string) =>
+    s
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+  function update() {
+    const query = normalize(input?.value.trim() || '');
+    let count = 0;
+    articles.forEach((a) => {
+      const match = !query || normalize(a.dataset.text || '').includes(query);
+      a.hidden = !match;
+      if (match) count++;
+    });
+    const label = document.querySelector('#search-count');
+    if (label) label.textContent = count + ' results';
+  }
+  if (input) {
+    input.value = new URLSearchParams(location.search).get('q') || '';
+    input.addEventListener('input', update);
+    update();
+  }
 </script>

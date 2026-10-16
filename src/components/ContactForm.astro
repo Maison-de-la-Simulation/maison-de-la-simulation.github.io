@@ -2,14 +2,128 @@
 // Public director contact from the institutional UVSQ directory. No WordPress backend is used.
 const recipient = 'pascal.tremblin@cea.fr';
 ---
-<section class="native-contact" aria-labelledby="contact-form-title"><p class="eyebrow">CONTACT THE LABORATORY</p><h2 id="contact-form-title">Your message</h2><p>Contact the director at <a href={'mailto:'+recipient}>{recipient}</a>, or prepare your message below.</p><form id="contact-form" data-recipient={recipient}><div class="form-pair"><label>Name <span aria-hidden="true">*</span><input name="name" autocomplete="name" required/></label><label>Email address <span aria-hidden="true">*</span><input type="email" name="email" autocomplete="email" required/></label></div><label>Subject<select name="subject"><option>General enquiries (jobs, training, etc.)</option><option>Mandelbrot room</option></select></label><label>Message<textarea name="message" rows="7" maxlength="500" required></textarea><span class="field-help">Maximum 500 characters.</span></label><label>Attachment (optional)<input type="file" name="attachment"/><span class="field-help">If you attach a file, an .eml draft is downloaded. Open it in your email application to send it.</span></label><p class="field-help">The button prepares an email in your email application. You review and send the message yourself.</p><button class="button ink" type="submit">Prepare my email ↗</button><p id="contact-status" role="status" aria-live="polite"></p></form></section>
+
+<section class="native-contact" aria-labelledby="contact-form-title">
+  <p class="eyebrow">CONTACT THE LABORATORY</p>
+  <h2 id="contact-form-title">Your message</h2>
+  <p>
+    Contact the director at <a href={'mailto:' + recipient}>{recipient}</a>, or prepare your message
+    below.
+  </p>
+  <form id="contact-form" data-recipient={recipient}>
+    <div class="form-pair">
+      <label>
+        Name <span aria-hidden="true">*</span>
+        <input name="name" autocomplete="name" required />
+      </label>
+      <label>
+        Email address <span aria-hidden="true">*</span>
+        <input type="email" name="email" autocomplete="email" required />
+      </label>
+    </div>
+    <label>
+      Subject
+      <select name="subject">
+        <option>General enquiries (jobs, training, etc.)</option>
+        <option>Mandelbrot room</option>
+      </select>
+    </label>
+    <label>
+      Message<textarea name="message" rows="7" maxlength="500" required></textarea>
+      <span class="field-help">Maximum 500 characters.</span>
+    </label>
+    <label>
+      Attachment (optional)
+      <input type="file" name="attachment" />
+      <span class="field-help">
+        If you attach a file, an .eml draft is downloaded. Open it in your email application to send
+        it.
+      </span>
+    </label>
+    <p class="field-help">
+      The button prepares an email in your email application. You review and send the message
+      yourself.
+    </p>
+    <button class="button ink" type="submit">
+      Prepare my email ↗
+    </button>
+    <p id="contact-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
 <script>
-const form=document.querySelector<HTMLFormElement>('#contact-form');
-const b64=(s:string)=>{const bytes=new TextEncoder().encode(s);let out='';bytes.forEach(x=>out+=String.fromCharCode(x));return btoa(out);};
-form?.addEventListener('submit',async event=>{event.preventDefault();const f=new FormData(form);const name=String(f.get('name')||'');const email=String(f.get('email')||'');const subject='MdlS — '+String(f.get('subject')||'');const body=String(f.get('message')||'')+'\n\n'+name+'\n'+email;const recipient=form.dataset.recipient||'';const file=f.get('attachment');const status=document.querySelector('#contact-status');
-if(file instanceof File && file.size){
- if(file.size>20*1024*1024){if(status)status.textContent='The attachment must be smaller than 20 MB.';return;}
- const boundary='mdls-'+crypto.randomUUID();let binary='';new Uint8Array(await file.arrayBuffer()).forEach(x=>binary+=String.fromCharCode(x));const encoded=btoa(binary).match(/.{1,76}/g)?.join('\r\n')||'';const filename=file.name.replace(/[\r\n"\\]/g,'_');const mime=file.type.replace(/[\r\n]/g,'')||'application/octet-stream';const eml=['X-Unsent: 1','To: '+recipient,'Reply-To: '+email.replace(/[\r\n]/g,''),'Subject: =?UTF-8?B?'+b64(subject)+'?=','MIME-Version: 1.0','Content-Type: multipart/mixed; boundary="'+boundary+'"','','--'+boundary,'Content-Type: text/plain; charset=UTF-8','Content-Transfer-Encoding: base64','',b64(body).match(/.{1,76}/g)?.join('\r\n')||'','--'+boundary,'Content-Type: '+mime+'; name="'+filename+'"','Content-Disposition: attachment; filename="'+filename+'"','Content-Transfer-Encoding: base64','',encoded,'--'+boundary+'--',''].join('\r\n');const url=URL.createObjectURL(new Blob([eml],{type:'message/rfc822'}));const a=document.createElement('a');a.href=url;a.download='message-mdls.eml';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);if(status)status.textContent='Draft downloaded. Open it in your email application to review and send the message.';
-}else{window.location.href='mailto:'+recipient+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);if(status)status.textContent='Your message is ready to open in your email application.';}
-});
+  const form = document.querySelector<HTMLFormElement>('#contact-form');
+  const b64 = (s: string) => {
+    const bytes = new TextEncoder().encode(s);
+    let out = '';
+    bytes.forEach((x) => (out += String.fromCharCode(x)));
+    return btoa(out);
+  };
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const f = new FormData(form);
+    const name = String(f.get('name') || '');
+    const email = String(f.get('email') || '');
+    const subject = 'MdlS — ' + String(f.get('subject') || '');
+    const body = String(f.get('message') || '') + '\n\n' + name + '\n' + email;
+    const recipient = form.dataset.recipient || '';
+    const file = f.get('attachment');
+    const status = document.querySelector('#contact-status');
+    if (file instanceof File && file.size) {
+      if (file.size > 20 * 1024 * 1024) {
+        if (status) status.textContent = 'The attachment must be smaller than 20 MB.';
+        return;
+      }
+      const boundary = 'mdls-' + crypto.randomUUID();
+      let binary = '';
+      new Uint8Array(await file.arrayBuffer()).forEach((x) => (binary += String.fromCharCode(x)));
+      const encoded =
+        btoa(binary)
+          .match(/.{1,76}/g)
+          ?.join('\r\n') || '';
+      const filename = file.name.replace(/[\r\n"\\]/g, '_');
+      const mime = file.type.replace(/[\r\n]/g, '') || 'application/octet-stream';
+      const eml = [
+        'X-Unsent: 1',
+        'To: ' + recipient,
+        'Reply-To: ' + email.replace(/[\r\n]/g, ''),
+        'Subject: =?UTF-8?B?' + b64(subject) + '?=',
+        'MIME-Version: 1.0',
+        'Content-Type: multipart/mixed; boundary="' + boundary + '"',
+        '',
+        '--' + boundary,
+        'Content-Type: text/plain; charset=UTF-8',
+        'Content-Transfer-Encoding: base64',
+        '',
+        b64(body)
+          .match(/.{1,76}/g)
+          ?.join('\r\n') || '',
+        '--' + boundary,
+        'Content-Type: ' + mime + '; name="' + filename + '"',
+        'Content-Disposition: attachment; filename="' + filename + '"',
+        'Content-Transfer-Encoding: base64',
+        '',
+        encoded,
+        '--' + boundary + '--',
+        '',
+      ].join('\r\n');
+      const url = URL.createObjectURL(new Blob([eml], { type: 'message/rfc822' }));
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'message-mdls.eml';
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      if (status)
+        status.textContent =
+          'Draft downloaded. Open it in your email application to review and send the message.';
+    } else {
+      window.location.href =
+        'mailto:' +
+        recipient +
+        '?subject=' +
+        encodeURIComponent(subject) +
+        '&body=' +
+        encodeURIComponent(body);
+      if (status) status.textContent = 'Your message is ready to open in your email application.';
+    }
+  });
 </script>
