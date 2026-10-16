@@ -30,11 +30,16 @@ for f,s in docs.items():
  for a in s.select('[style]'):
   if re.search(r'https?://(?:www\.)?(?:mdls.fr|maisondelasimulation.fr)',a['style']):errors.append((str(f),'REMOTE BG',a['style']))
 # Check that all source routes exist (homepage full content is retained on laboratoire).
-pages=json.load(open(root/'src/data/pages.json'));missingroutes=[]
-for page in pages:
- if page['kind']=='job':continue
+pages=json.load(open(root/'src/data/pages.json'));additional=json.load(open(root/'src/data/member-profiles.json'));publication=json.load(open(root/'src/data/publication.json'));missingroutes=[];unexpectedroutes=[]
+for page in pages+additional:
+ if page['kind'] in publication['excluded_kinds'] or page['path'] in publication['excluded_paths']:
+  path=page['path'].strip('/');target=dist/path/'index.html'
+  if target.exists():unexpectedroutes.append(page['path'])
+  continue
  path=page['path'].strip('/');target=dist/path/'index.html' if path else dist/'index.html'
  if not target.exists():missingroutes.append(page['path'])
+for path in publication['excluded_paths']:
+ if (dist/path.strip('/')/'index.html').exists():unexpectedroutes.append(path)
 # Compare every public API document's body text, without obsolete migration notice and dynamic form labels.
 api=json.load(open(root/'migration/wordpress-pages.json'))+json.load(open(root/'migration/wordpress-posts.json'))
 coverage=[]
@@ -47,7 +52,7 @@ for item in api:
    if e.find_parent(class_='wp-block-group') is None and 'Our new website' in e.get_text(' ',strip=True):e.decompose()
  original=norm(s.get_text(' ',strip=True));new=norm(BeautifulSoup(page['html'],'html.parser').get_text(' ',strip=True));ok=original==new
  coverage.append(dict(path=path,text_preserved=ok,source_characters=len(original),migrated_characters=len(new)))
-print(json.dumps(dict(base=base,html_pages=len(docs),source_routes=len(pages),assets=len(json.load(open(root/'migration/asset-map.json'))),broken=errors,broken_anchors=anchors,duplicate_ids=duplicates,remote_media=external_media,missing_source_routes=missingroutes,text_coverage=coverage),ensure_ascii=False,indent=2))
-report=dict(base=base,html_pages=len(docs),source_routes=len(pages),assets=len(json.load(open(root/'migration/asset-map.json'))),broken=errors,broken_anchors=anchors,duplicate_ids=duplicates,remote_media=external_media,missing_source_routes=missingroutes,text_coverage=coverage)
+report=dict(base=base,html_pages=len(docs),source_routes=len(pages),additional_profiles=len(additional),assets=len(json.load(open(root/'migration/asset-map.json'))),broken=errors,broken_anchors=anchors,duplicate_ids=duplicates,remote_media=external_media,missing_source_routes=missingroutes,unexpected_published_routes=unexpectedroutes,text_coverage=coverage)
+print(json.dumps(report,ensure_ascii=False,indent=2))
 (root/'migration'/('audit-root.json' if base=='/' else 'audit-subpath.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2))
-if errors or anchors or duplicates or missingroutes or external_media or any(not x['text_preserved'] for x in coverage):sys.exit(1)
+if errors or anchors or duplicates or missingroutes or unexpectedroutes or external_media or any(not x['text_preserved'] for x in coverage):sys.exit(1)

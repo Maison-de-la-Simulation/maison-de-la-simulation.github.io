@@ -1,13 +1,15 @@
 {
   "base": "/",
-  "html_pages": 175,
+  "html_pages": 215,
   "source_routes": 162,
+  "additional_profiles": 59,
   "assets": 80,
   "broken": [],
   "broken_anchors": [],
   "duplicate_ids": [],
   "remote_media": [],
   "missing_source_routes": [],
+  "unexpected_published_routes": [],
   "text_coverage": [
     {
       "path": "/tiledviz-2/",

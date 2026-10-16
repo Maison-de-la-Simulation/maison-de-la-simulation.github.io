@@ -1,0 +1,15 @@
+{
+  "excluded_kinds": [
+    "job",
+    "seminar"
+  ],
+  "excluded_paths": [
+    "/seminars/",
+    "/category/seminar/",
+    "/category/seminar/seminaire-futur/",
+    "/category/seminar/seminaire-passe/",
+    "/category/non-classe/",
+    "/actualites/",
+    "/news/"
+  ]
+}

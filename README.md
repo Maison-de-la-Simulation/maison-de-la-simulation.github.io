@@ -1,6 +1,6 @@
 # Maison de la Simulation — Astro / GitHub Pages
 
-A complete English-language redesign of the public Maison de la Simulation website. It includes modernised editorial content, the full directory and seminar archives, local scientific media, official institutional and partner logos, and a laser–plasma video credited to Francesco Massimo.
+A complete English-language redesign of the public Maison de la Simulation website. It includes modernised editorial content, the full directory, local scientific media, official institutional and partner logos, and a laser–plasma video credited to Francesco Massimo.
 
 ## Run locally
 
@@ -55,19 +55,20 @@ GitHub and LinkedIn icons appear immediately before Contact in the masthead.
 
 Research actions on the homepage go directly to Science of Computing. Expertise actions go directly to Science by Computing. Contact and search remain available alongside the six main entries.
 
-English URLs also include `/news/`, `/search/`, `/site-map/` and `/credits/`. Historical routes continue to render local English pages, preserving existing bookmarks.
+English URLs also include `/search/`, `/site-map/` and `/credits/`. Historical directory and laboratory routes continue to render local English pages. Withdrawn vacancies and seminar pages, including the former news listings, are no longer published.
 
 ## Complete content migration
 
 The public sitemaps and WordPress API were inventoried on 15 October 2026:
 
-- 162 source routes inventoried; three outdated vacancy pages are no longer published.
+- 162 source routes inventoried; outdated vacancies, seminar pages and their listing routes are no longer published.
 - 11 WordPress pages and 16 posts: the Members post is the main directory; the remaining posts include 12 seminars and 3 vacancies.
 - 87 individual member records and 17 portrait pages.
-- All directory entries, modernised scientific descriptions, seminar archives and document downloads.
+- All directory entries, modernised scientific descriptions and local document downloads.
+- 59 additional member profiles use only existing directory information; every directory name has a link.
 - 80 original local media files, including five PDFs, plus current parent-institution logos, eleven official partner identities, and the supplied video with a poster frame.
 
-All website copy, headings, interfaces, dates, forms and accessibility labels are in English. French seminar abstracts and the workshop programme table have been translated. Names, postal addresses and official identities are retained; original archived PDFs and text within supplied scientific graphics remain unchanged.
+All published website copy, headings, interfaces, forms and accessibility labels are in English. Names, postal addresses and official identities are retained; original archived PDFs and text within supplied scientific graphics remain unchanged.
 
 The modernised presentations replace the former expandable scientific background sections. No link or media embed returns to the retired WordPress website. External software repositories, publication services, personal websites and training registration services retain their external destinations.
 
@@ -101,11 +102,11 @@ The Training page includes five compact programme cards with official programme 
 
 ## Life science expertise
 
-The Science by Computing page includes “Life science”, highlighting the CEA–CAD computing infrastructure at the TGCC and linking to Yves Vandenbrouck and Jean-Michel Batto in the directory. The CAD identity is hosted locally. Project and image provenance are recorded in `migration/health-genomics.json`.
+The Science by Computing page identifies Charles Prouveur as team leader. It includes “Life science”, highlighting the CEA–CAD computing infrastructure at the TGCC and linking to the profiles of Yves Vandenbrouck and Jean-Michel Batto. Names in the research and expertise contact lines link to known personal sites or local member profiles. The CAD identity is hosted locally. Project and image provenance are recorded in `migration/health-genomics.json`.
 
 ## Homepage and recruitment
 
-The homepage carries the motto “Computing for science, science for computing”. The repeated joint-laboratory strip has been removed; institutional logos remain in the masthead. Jobs links point visitors to the contact form or the laboratory’s LinkedIn account, and former vacancy pages are excluded from publication, search and site maps. The older expandable travel directions are also removed.
+The homepage carries the motto “Computing for science, science for computing”. The repeated joint-laboratory strip and featured seminar event have been removed; institutional logos remain in the masthead. Jobs links point visitors to the contact form or the laboratory’s LinkedIn account. Former vacancy pages, seminars and their listing pages are excluded from publication, search and site maps through `src/data/publication.json`. The older expandable travel directions are also removed.
 
 ## Scientific video
 
@@ -120,6 +121,8 @@ See `migration/video.json` for technical details and the original file checksum.
 - `src/data/editorial.json`: modern English page content, titles and introductions.
 - `src/data/translations.en.json`: English versions of imported content and archives.
 - `src/data/pages.json`: original source records, routes, categories and scientific text snapshots.
+- `src/data/member-profiles.json`: additional local profiles based on directory roles, teams and membership status, without inferred personal URLs or biographies.
+- `src/data/publication.json`: withdrawn content kinds and listing routes.
 - `src/data/software.json`: all six software descriptions, logos and links.
 - `src/data/partners.json`: the eleven partner identities and official sources.
 - `src/data/tutelles.json`: parent institutions and their logos.
@@ -146,11 +149,12 @@ The recipient is `pascal.tremblin@cea.fr`, the public director contact in UVSQ�
 
 Root and `/mdls-test/` builds have been checked for:
 
-- All published source routes, local media, internal links and anchors; three withdrawn vacancy pages are excluded.
+- All published source routes, local media, internal links and anchors; withdrawn vacancy and seminar routes are absent.
 - English language declarations and interface copy.
 - The exact six-entry navigation and direct SoC/SbC destinations.
 - Eleven local partner identities and four parent-institution logos.
 - Preservation of all 140 directory list entries and two leadership contacts, including repeated entries present in the source.
+- A link on each of the 142 directory names, Charles Prouveur’s linked SbC leadership credit, and removal of the featured event.
 - A responsive Members directory with consistent portraits, team and status sections, and accent-insensitive filtering.
 - The scientific video and its visible Francesco Massimo credit.
 - Absence of requests to retired WordPress pages or media.
@@ -168,4 +172,4 @@ python3 scripts/verify-editorial.py
 
 After building with `BASE_PATH=/mdls-test`, pass `/mdls-test/` to both audit scripts.
 
-Browser preview was unavailable in the development environment. Visual layout, mobile interaction and email draft opening still require a browser check before production deployment. Training uses links to the CC-FR and IDRIS catalogues and the Gray Scott School, with no dated session archive. Recruitment points to the contact form and LinkedIn; outdated vacancies are no longer published. Publication dates are hidden; seminar event dates remain available.
+Browser preview was unavailable in the development environment. Visual layout, mobile interaction and email draft opening still require a browser check before production deployment. Training uses links to the CC-FR and IDRIS catalogues and the Gray Scott School, with no dated session archive. Recruitment points to the contact form and LinkedIn. Publication dates are hidden, and outdated vacancies and seminars are no longer published.

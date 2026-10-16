@@ -32,6 +32,16 @@ for li in source.select('li'):
  if name:names.append(name)
 rendered=BeautifulSoup((root/'dist/members/index.html').read_text(),'html.parser').select_one('main').get_text(' ',strip=True)
 missing=[name for name in names if norm(name) not in norm(rendered)];assert not missing,missing
+directory=BeautifulSoup((root/'dist/members/index.html').read_text(),'html.parser')
+member_names=directory.select('.member-name')
+assert len(member_names)==142,len(member_names)
+assert all(n.find('a',href=True) and n.find('a')['href'].strip() for n in member_names)
+expertise=BeautifulSoup((root/'dist/science-by-computing/index.html').read_text(),'html.parser')
+leader=expertise.select_one('#team a[href="'+base+'member/charles-prouveur/"]')
+assert leader and leader.get_text(' ',strip=True)=='Charles Prouveur'
+assert 'Team leader:' in leader.parent.get_text(' ',strip=True)
+assert not home.select('.news-strip')
+assert not any(re.search(r'seminars?|séminaire|featured',a.get_text(' ',strip=True),re.I) for a in home.find_all('a'))
 # Catch residual French interface wording while allowing original proper names and postal addresses.
 fr=re.compile(r'\b(?:avec|pour|notre|votre|recherche|équipe|accueil|données|une|nous|vous|sont|scientifiques|réseau|orateur|thèse|cette|prêt|consulter|générales|télécharger)\b',re.I)
 residual=[];seen=set()
@@ -43,5 +53,5 @@ for file in htmls:
   seen.add(text)
   if fr.search(text):residual.append({'page':str(file.relative_to(root/'dist')),'text':text})
 assert not residual,residual
-report={'language':'en','html_pages_checked':len(htmls),'source_routes':len(raw),'navigation':expected,'partner_logos':[p['name'] for p in partners],'directory_entries_checked':len(names),'missing_directory_names':missing,'video_credit':'Francesco Massimo','residual_french_interface_text':residual,'base':base}
+report={'language':'en','html_pages_checked':len(htmls),'source_routes':len(raw),'navigation':expected,'partner_logos':[p['name'] for p in partners],'directory_entries_checked':len(names),'linked_directory_entries':len(member_names),'missing_directory_names':missing,'sbc_team_leader':'Charles Prouveur','homepage_featured_event_removed':True,'video_credit':'Francesco Massimo','residual_french_interface_text':residual,'base':base}
 (root/'migration'/('english-verification.json' if base=='/' else 'english-verification-subpath.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report,ensure_ascii=False,indent=2))

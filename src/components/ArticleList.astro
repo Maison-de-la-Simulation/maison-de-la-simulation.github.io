@@ -1,6 +1,0 @@
----
-import { content, href } from '../lib/content';
-const {kind='all',category=''}=Astro.props;
-const articles=content.filter(p=>(kind==='all'?p.kind==='seminar':p.kind===kind)).filter(p=>!category||p.classes.includes('category-'+category)).sort((a,b)=>b.date.localeCompare(a.date));
----
-<div class="article-list">{articles.map(p=><article class="article-preview"><div><span class="pill">{p.label||(p.kind==='job'?'Recruitment · archive':'Seminar')}</span>{p.eventDate&&<time datetime={p.eventDate}>{new Date(p.eventDate).toLocaleDateString('en-GB',p.eventDate.length>7?{day:'numeric',month:'long',year:'numeric'}:{month:'long',year:'numeric'})}</time>}</div><h2><a href={href(p.path)}>{p.title}<span aria-hidden="true"> ↗</span></a></h2><p>{p.intro||p.text.slice(0,200)+(p.text.length>200?'…':'')}</p><a class="text-link" href={href(p.path)}>Read the full article →</a></article>)}</div>

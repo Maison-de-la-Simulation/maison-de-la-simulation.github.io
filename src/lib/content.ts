@@ -1,11 +1,13 @@
 import pages from '../data/pages.json';
 import translations from '../data/translations.en.json';
 import editorial from '../data/editorial.json';
+import memberProfiles from '../data/member-profiles.json';
+import publication from '../data/publication.json';
 type Override = { title?: string; intro?: string; html?: string; text?: string; toc?: {id:string,title:string}[]; originalHtml?: string; originalLabel?: string; showOriginal?: boolean; eventDate?: string; label?: string };
 const edits=editorial as Record<string,Override>;
 const english=translations as Record<string,Override>;
 const roles:Record<string,string>={'alumni':'Alumni','assistante-de-direction':'Executive assistants','associate-professor':'Associate professors','deputy-director':'Deputy directors','director':'Directors','engineer':'Engineers','intern':'Interns','member':'Members','phd':'PhD students','postdoc':'Postdoctoral researchers','professor':'Professors','project-manager':'Project managers','research-director':'Research directors','research-engineer':'Research engineers','membres':'Members','post-doc':'Postdoctoral researchers','phd-students':'PhD students','executive-assistant':'Executive assistants'};
-export const content=pages.filter(source=>source.kind!=='job').map(source=>{
+export const content=[...pages,...memberProfiles].filter(source=>!publication.excluded_kinds.includes(source.kind)&&!publication.excluded_paths.includes(source.path)).map(source=>{
  const translated=english[source.path]||{};
  const edit=edits[source.path]||{};
  const page={...source,...translated,...edit};

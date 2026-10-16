@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "html_pages_checked": 175,
+  "html_pages_checked": 215,
   "source_routes": 162,
   "navigation": [
     [
@@ -42,7 +42,10 @@
     "U.S. Department of Energy"
   ],
   "directory_entries_checked": 140,
+  "linked_directory_entries": 142,
   "missing_directory_names": [],
+  "sbc_team_leader": "Charles Prouveur",
+  "homepage_featured_event_removed": true,
   "video_credit": "Francesco Massimo",
   "residual_french_interface_text": [],
   "base": "/mdls-test/"

@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import {content,href} from '../lib/content';
-const groups=[['Laboratory pages',['home','page','directory']],['News and seminars',['seminar']],['Member profiles',['member']],['Portraits',['glossary-entry']],['Thematic archives',['archive']]];
+const groups=[['Laboratory pages',['home','page','directory']],['Member profiles',['member']],['Portraits',['glossary-entry']],['Directory archives',['archive']]];
 ---
-<Base title="Site map"><section class="page-head"><p class="eyebrow">ALL CONTENT</p><h1>Site map.</h1><p class="intro">Find laboratory pages, the directory, seminars and archives.</p></section><section class="section">{groups.map(([title,kinds])=><section class="site-map-group"><h2>{title}</h2><div class="directory-archive">{content.filter(p=>(kinds as string[]).includes(p.kind)).sort((a,b)=>a.title.localeCompare(b.title,'en')).map(p=><a href={href(p.path)}><span>{p.title}</span><span aria-hidden="true">↗</span></a>)}</div></section>)}</section></Base>
+<Base title="Site map"><section class="page-head"><p class="eyebrow">ALL CONTENT</p><h1>Site map.</h1><p class="intro">Find laboratory pages, member profiles and the full directory.</p></section><section class="section">{groups.map(([title,kinds])=><section class="site-map-group"><h2>{title}</h2><div class="directory-archive">{content.filter(p=>(kinds as string[]).includes(p.kind)).sort((a,b)=>a.title.localeCompare(b.title,'en')).map(p=><a href={href(p.path)}><span>{p.title}</span><span aria-hidden="true">↗</span></a>)}</div></section>)}</section></Base>
