@@ -32,6 +32,7 @@ for f,s in docs.items():
 # Check that all source routes exist (homepage full content is retained on laboratoire).
 pages=json.load(open(root/'src/data/pages.json'));missingroutes=[]
 for page in pages:
+ if page['kind']=='job':continue
  path=page['path'].strip('/');target=dist/path/'index.html' if path else dist/'index.html'
  if not target.exists():missingroutes.append(page['path'])
 # Compare every public API document's body text, without obsolete migration notice and dynamic form labels.

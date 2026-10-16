@@ -46,3 +46,28 @@
 .members-directory a:focus-visible,.directory-search-row button:focus-visible{outline:2px solid #087d71;outline-offset:4px}
 @media(max-width:1000px){.migrated-content .members-directory .member-grid-compact{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.members-directory .directory-leadership{grid-template-columns:minmax(0,1fr);gap:22px}.migrated-content .members-directory .member-grid,.migrated-content .members-directory .member-grid-compact{grid-template-columns:minmax(0,1fr)}.migrated-content .members-directory h2{font-size:26px}.members-directory .directory-section{margin-bottom:35px;padding-bottom:30px}.directory-search-row{flex-wrap:wrap}.directory-search-row input{flex-basis:100%;max-width:100%}.directory-search-row button{padding:10px 14px}}
+
+/* Social navigation, recruitment and partner training */
+.site-header nav .nav-social{display:inline-flex;align-items:center;justify-content:center;flex:0 0 28px;width:28px;height:32px;padding:4px;border-radius:4px}
+.site-header nav .nav-social img{display:block;width:20px;height:20px}
+.site-header nav .nav-social:hover{background:#e6eeea}
+.site-header nav .nav-social:focus-visible{outline:2px solid #087d71;outline-offset:3px}
+.migrated-content .recruitment-actions{display:flex;align-items:stretch;flex-wrap:wrap;gap:16px;margin-top:30px}
+.migrated-content .recruitment-action{display:inline-flex;align-items:center;justify-content:flex-start;gap:12px;font-size:13px;text-decoration:none!important}
+.migrated-content .recruitment-action img,.migrated-content .recruitment-action svg{display:block;flex:0 0 20px;width:20px;height:20px;margin:0;max-height:20px}
+.migrated-content .recruitment-action>span:last-child{margin-left:10px}
+.training-providers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:28px 0 0}
+.training-provider{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:24px;background:#fff;border:1px solid var(--line);border-radius:4px;scroll-margin-top:25px}
+.training-provider-logo{display:flex;align-items:center;height:70px;width:100%;margin-bottom:20px}
+.migrated-content .training-provider-logo img{display:block;width:auto;height:auto;max-width:145px;max-height:65px;margin:0;object-fit:contain}
+.training-school-mark{display:flex;flex-direction:column;justify-content:center;height:70px;margin-bottom:20px;font-size:12px;font-weight:750;letter-spacing:1.4px;line-height:1.8;color:#087d71}
+.migrated-content .training-provider h3{font-size:23px;margin:0 0 15px;letter-spacing:-.5px}
+.migrated-content .training-provider p{flex:1;margin:0 0 24px;font-size:14px;line-height:1.7}
+.migrated-content .training-provider>a{font-size:12px;font-weight:650;color:#087d71;line-height:1.6;overflow-wrap:anywhere}
+@media(max-width:1250px){.navigation-row .lab-signature{display:none}.navigation-row{justify-content:flex-end}.navigation-row nav{gap:15px}}
+@media(max-width:1000px){.training-providers{grid-template-columns:minmax(0,1fr)}.training-provider{padding:24px}.training-provider-logo,.training-school-mark{margin-bottom:15px}}
+@media(max-width:760px){.navigation-row{justify-content:space-between}.navigation-row .lab-signature{display:block}.site-header nav .nav-social{flex-basis:36px;width:36px;height:36px}.migrated-content .recruitment-actions{align-items:stretch}.migrated-content .recruitment-action{width:100%}}
+.migrated-content .recruitment-action{color:var(--ink)}
+.migrated-content .recruitment-action.ink{color:#fff}
+.migrated-content .recruitment-action.ink:hover{background:#193f4d;color:#fff}
+.migrated-content .recruitment-action:focus-visible{outline:2px solid #087d71;outline-offset:4px}

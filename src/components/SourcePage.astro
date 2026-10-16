@@ -17,8 +17,7 @@ if(page?.path?.startsWith('/member_category/'))entries=entries.filter(p=>p.class
 if(page?.path?.startsWith('/member_location/'))entries=entries.filter(p=>p.classes.includes('member_location-'+page.path.split('/')[2]));
 entries.sort((a,b)=>a.title.localeCompare(b.title,'en'));
 ---
-<Base title={title} description={intro||page?.text?.slice(0,160)}><section class="page-head"><p class="eyebrow">MAISON DE LA SIMULATION / {page?.label||labels[page?.kind]||'RESOURCES'}</p><h1>{title}</h1>{intro&&<p class="intro">{intro}</p>}{page?.eventDate?<p class="page-date">{new Date(page.eventDate).toLocaleDateString('en-GB',page.eventDate.length>7?{day:'numeric',month:'long',year:'numeric'}:{month:'long',year:'numeric'})}</p>:page?.date&&<p class="page-date">Published on {new Date(page.date).toLocaleDateString('en-GB')}</p>}{badges.length>0&&<div class="profile-badges">{[...new Set(badges)].map(label=><span class="pill">{label}</span>)}</div>}</section>
-{page?.kind==='job'&&<div class="archive-notice">Archived vacancy. Its publication date does not mean that applications are still open.</div>}
+<Base title={title} description={intro||page?.text?.slice(0,160)}><section class="page-head"><p class="eyebrow">MAISON DE LA SIMULATION / {page?.label||labels[page?.kind]||'RESOURCES'}</p><h1>{title}</h1>{intro&&<p class="intro">{intro}</p>}{page?.kind==='seminar'&&page.eventDate&&<p class="page-date">{new Date(page.eventDate).toLocaleDateString('en-GB',page.eventDate.length>7?{day:'numeric',month:'long',year:'numeric'}:{month:'long',year:'numeric'})}</p>}{badges.length>0&&<div class="profile-badges">{[...new Set(badges)].map(label=><span class="pill">{label}</span>)}</div>}</section>
 <section class:list={['article-layout',{'profile-page':isProfile}]}>
 {page?.toc?.length>2&&<aside class="toc"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="Contents">{page.toc.map((h:{id:string,title:string})=><a href={'#'+h.id}>{h.title}</a>)}</nav></aside>}
 <div class="source-content">
@@ -27,8 +26,8 @@ entries.sort((a,b)=>a.title.localeCompare(b.title,'en'));
 {page?.originalHtml&&page.showOriginal&&<details class="original-version"><summary>{page.originalLabel}</summary><div class="migrated-content" lang="en" set:html={localize(page.originalHtml)}/></details>}
 {page?.kind==='directory'&&<div class="quick-links"><a href={href('/member/')}>All member profiles →</a><a href={href('/glossary/')}>All portraits →</a></div>}
 {page?.path==='/contact/'&&<ContactForm/>}
-{['/seminars/','/jobs/'].includes(page?.path)&&<div class="complete-archives"><h2>{page.path==='/jobs/'?'All archived vacancies':'All seminars'}</h2><ArticleList kind={page.path==='/jobs/'?'job':'seminar'}/></div>}
-{page?.kind==='archive'&&<div class="complete-archives">{isMemberCategory?<div class="migrated-content" set:html={localize(directoryHtml)}/>:page.path.startsWith('/category/')?<ArticleList category={category}/>:<><h2>Directory profiles</h2><div class="directory-archive">{entries.map(p=><a href={href(p.path)}><span>{p.title}</span><span aria-hidden="true">↗</span></a>)}</div></>}</div>}
+{page?.path==='/seminars/'&&<div class="complete-archives"><h2>All seminars</h2><ArticleList kind="seminar"/></div>}
+{page?.kind==='archive'&&!page.path.startsWith('/category/job/')&&<div class="complete-archives">{isMemberCategory?<div class="migrated-content" set:html={localize(directoryHtml)}/>:page.path.startsWith('/category/')?<ArticleList category={category}/>:<><h2>Directory profiles</h2><div class="directory-archive">{entries.map(p=><a href={href(p.path)}><span>{p.title}</span><span aria-hidden="true">↗</span></a>)}</div></>}</div>}
 {isProfile&&<a class="button ink" href={href('/members/')}>View the full directory →</a>}
 </div></section></Base>
 <script>

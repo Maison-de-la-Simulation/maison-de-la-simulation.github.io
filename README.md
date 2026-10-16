@@ -1,6 +1,6 @@
 # Maison de la Simulation — Astro / GitHub Pages
 
-A complete English-language redesign of the public Maison de la Simulation website. It includes modernised editorial content, the full directory and archives, local scientific media, official institutional and partner logos, and a laser–plasma video credited to Francesco Massimo.
+A complete English-language redesign of the public Maison de la Simulation website. It includes modernised editorial content, the full directory and seminar archives, local scientific media, official institutional and partner logos, and a laser–plasma video credited to Francesco Massimo.
 
 ## Run locally
 
@@ -51,6 +51,8 @@ To use mdls.fr, configure **Settings → Pages → Custom domain**, follow GitHu
 | Software | `/software/` |
 | Members | `/members/` |
 
+GitHub and LinkedIn icons appear immediately before Contact in the masthead.
+
 Research actions on the homepage go directly to Science of Computing. Expertise actions go directly to Science by Computing. Contact and search remain available alongside the six main entries.
 
 English URLs also include `/news/`, `/search/`, `/site-map/` and `/credits/`. Historical routes continue to render local English pages, preserving existing bookmarks.
@@ -59,10 +61,10 @@ English URLs also include `/news/`, `/search/`, `/site-map/` and `/credits/`. Hi
 
 The public sitemaps and WordPress API were inventoried on 15 October 2026:
 
-- 162 distinct source routes, retained locally.
+- 162 source routes inventoried; three outdated vacancy pages are no longer published.
 - 11 WordPress pages and 16 posts: the Members post is the main directory; the remaining posts include 12 seminars and 3 vacancies.
 - 87 individual member records and 17 portrait pages.
-- All directory entries, modernised scientific descriptions, archives and document downloads.
+- All directory entries, modernised scientific descriptions, seminar archives and document downloads.
 - 80 original local media files, including five PDFs, plus current parent-institution logos, ten official partner identities, and the supplied video with a poster frame.
 
 All website copy, headings, interfaces, dates, forms and accessibility labels are in English. French seminar abstracts and the workshop programme table have been translated. Names, postal addresses and official identities are retained; original archived PDFs and text within supplied scientific graphics remain unchanged.
@@ -89,6 +91,10 @@ The partner grid contains exactly:
 Files are copied from official institutional websites, checked on 16 October 2026. The École polytechnique and CC-FR vector logos are extracted from their official header SVGs. IDRIS uses the image currently served as `logo_IDRIS.png` by its official site. Colours and proportions are retained.
 
 See `src/data/partners.json` for names, links, local files and provenance. The four parent-institution logos remain beside the MdlS logo in the masthead and are configured in `src/data/tutelles.json`.
+
+## Homepage and recruitment
+
+The homepage carries the motto “Computing for science, science for computing”. The repeated joint-laboratory strip has been removed; institutional logos remain in the masthead. Jobs links point visitors to the contact form or the laboratory’s LinkedIn account, and former vacancy pages are excluded from publication, search and site maps. The older expandable travel directions are also removed.
 
 ## Scientific video
 
@@ -129,7 +135,7 @@ The recipient is `pascal.tremblin@cea.fr`, the public director contact in UVSQ�
 
 Root and `/mdls-test/` builds have been checked for:
 
-- All 162 source routes, local media, internal links and anchors.
+- All published source routes, local media, internal links and anchors; three withdrawn vacancy pages are excluded.
 - English language declarations and interface copy.
 - The exact six-entry navigation and direct SoC/SbC destinations.
 - Ten local partner identities and four parent-institution logos.
@@ -151,4 +157,4 @@ python3 scripts/verify-editorial.py
 
 After building with `BASE_PATH=/mdls-test`, pass `/mdls-test/` to both audit scripts.
 
-Browser preview was unavailable in the development environment. Visual layout, mobile interaction and email draft opening still require a browser check before production deployment. Archived training and vacancy dates do not imply that registration or recruitment remains open.
+Browser preview was unavailable in the development environment. Visual layout, mobile interaction and email draft opening still require a browser check before production deployment. Training uses links to the CC-FR and IDRIS catalogues and the Gray Scott School, with no dated session archive. Recruitment points to the contact form and LinkedIn; outdated vacancies are no longer published. Publication dates are hidden; seminar event dates remain available.

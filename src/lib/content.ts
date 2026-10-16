@@ -5,12 +5,12 @@ type Override = { title?: string; intro?: string; html?: string; text?: string; 
 const edits=editorial as Record<string,Override>;
 const english=translations as Record<string,Override>;
 const roles:Record<string,string>={'alumni':'Alumni','assistante-de-direction':'Executive assistants','associate-professor':'Associate professors','deputy-director':'Deputy directors','director':'Directors','engineer':'Engineers','intern':'Interns','member':'Members','phd':'PhD students','postdoc':'Postdoctoral researchers','professor':'Professors','project-manager':'Project managers','research-director':'Research directors','research-engineer':'Research engineers','membres':'Members','post-doc':'Postdoctoral researchers','phd-students':'PhD students','executive-assistant':'Executive assistants'};
-export const content=pages.map(source=>{
+export const content=pages.filter(source=>source.kind!=='job').map(source=>{
  const translated=english[source.path]||{};
  const edit=edits[source.path]||{};
  const page={...source,...translated,...edit};
  let title=edit.title||source.title;
- if(page.kind==='archive'){
+ if(page.kind==='archive'&&!edit.title){
   const key=page.path.split('/').filter(Boolean).at(-1)||'';
   if(page.path.startsWith('/member_'))title=roles[key]||'Directory';
   else if(page.path==='/member/')title='Member profiles';
