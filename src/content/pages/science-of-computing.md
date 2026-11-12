@@ -132,15 +132,23 @@ exascale data software and tools, and its Work Package 3.
 
 ## Analyse, compare and visualise
 
-**Contact:** [Martial Mancip](__BASE__member/martial-mancip/).
+**Contact point:** [Martial Mancip](__BASE__member/martial-mancip/).
 
-We build tools to make sense of simulation results, either during execution or after data has been
-stored. Computer vision and supervised learning help detect events and structures and produce
-indicators of a simulation’s evolution.
+We develop tools to analyse numerical simulation data in situ, while a simulation is running on a
+supercomputer, or in post-processing, using results stored on disk.
 
-[TiledViz & VRWall](__BASE__tiledviz-2/) supports the exploration of simulation ensembles. VisIt,
-ParaView and VMD complement our analysis and visualisation workflows. These approaches also address
-complex data from medicine and biology.
+- **AI-assisted analysis.** We use computer vision, including supervised deep learning models
+  trained on labelled and oversampled data, to detect events and patterns and derive global metrics
+  of how simulations evolve. We apply the same methods to complex medical and biological data.
+- **Visualisation with [HIVE-SA](__BASE__hive-sa/).** HIVE-SA (High-resolution Immersive
+  Visualization Environment for Scientific Analysis) brings together **TiledViz**, which lets teams
+  compare and interact with hundreds of simulation results as a mosaic, and **VRWall**, which
+  recreates the laboratory’s display wall in mixed reality. We offer HIVE-SA to other research
+  units, with support from the first discussion through to analysis sessions. The visualisation
+  tools run where the data are hosted, so teams can work from their own lab without transferring
+  their datasets.
+- **Standard frameworks.** We use VisIt, ParaView and VMD to build efficient analysis and
+  visualisation pipelines for massively parallel simulations.
 
 </section>
 
@@ -267,10 +275,10 @@ including finite volume methods — and algorithms for machine learning and arti
   <p class="eyebrow">Collaborative visualisation</p>
   <h3>TiledViz &amp; VRWall</h3>
   <p>
-    A web application for organising and exploring sets of results. Metadata supports sorting and
-    comparison on a workstation or an image wall.
+    TiledViz arranges results in a mosaic for comparison. Together with VRWall, it forms the HIVE-SA
+    service for collaborative visualisation on screen, on a display wall or in mixed reality.
   </p>
-  <a href="__BASE__tiledviz-2/">Explore the project ↗</a>
+  <a href="__BASE__hive-sa/">Explore HIVE-SA ↗</a>
 </article>
 
 <article class="editorial-software" id="yml">

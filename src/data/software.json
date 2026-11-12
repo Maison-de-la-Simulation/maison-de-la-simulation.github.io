@@ -35,8 +35,8 @@
     "id": "tiledviz",
     "name": "TiledViz",
     "tag": "Collaborative visualisation",
-    "text": "A web application for organising and exploring sets of results. Metadata supports sorting and comparison on a workstation or an image wall.",
-    "url": "__BASE__tiledviz-2/",
+    "text": "A web application for comparing and annotating collections of scientific results. TiledViz is part of HIVE-SA, alongside the VRWall mixed reality display.",
+    "url": "__BASE__hive-sa/",
     "image": "media/logo-tiledviz-69ab7d6594.png"
   },
   {

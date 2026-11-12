@@ -18,6 +18,9 @@ expected = [
 htmls = list((root / "dist").rglob("*.html"))
 for file in htmls:
     soup = BeautifulSoup(file.read_text(), "html.parser")
+    # Astro's static redirects do not use the shared page layout.
+    if soup.find("meta", attrs={"http-equiv": "refresh"}):
+        continue
     assert soup.html.get("lang") == "en", file
     nav = soup.find(id="navigation")
     assert nav, file

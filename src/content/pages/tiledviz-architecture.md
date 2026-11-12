@@ -132,7 +132,7 @@ it together.
 </figure>
 
 <div class="editorial-links">
-  <a href="__BASE__tiledviz-2/">TiledViz and VRWall <span aria-hidden="true">↗</span></a
+  <a href="__BASE__hive-sa/">HIVE-SA <span aria-hidden="true">↗</span></a
   ><a href="__BASE__contact/">Contact the visualisation team <span aria-hidden="true">↗</span></a>
 </div>
 
