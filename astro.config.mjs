@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
-  site: process.env.SITE_URL || 'https://maison-de-la-simulation.github.io',
+  site: process.env.SITE_URL || 'https://mdls.fr',
   base,
   output: 'static',
   trailingSlash: 'always',
