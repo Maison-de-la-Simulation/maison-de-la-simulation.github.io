@@ -11,6 +11,7 @@ expected = [
     ("Laboratory", "laboratory/"),
     ("Research", "science-of-computing/"),
     ("Expertise", "science-by-computing/"),
+    ("Strategy", "strategy/"),
     ("Training", "training/"),
     ("Software", "software/"),
     ("Members", "members/"),
@@ -26,7 +27,7 @@ for file in htmls:
     assert nav, file
     entries = [
         (a.get_text(" ", strip=True), unquote(a.get("href", ""))) for a in nav.find_all("a")
-    ][:6]
+    ][: len(expected)]
     assert entries == [(name, base + path) for name, path in expected], (file, entries)
 home = BeautifulSoup((root / "dist/index.html").read_text(), "html.parser")
 partners = json.load(open(root / "src/data/partners.json"))

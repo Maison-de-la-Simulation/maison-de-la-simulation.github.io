@@ -14,6 +14,7 @@ s’occupent de l’affichage.
 | Présentation du laboratoire                                               | `src/content/pages/laboratory.md`           |
 | Research / Science of Computing                                           | `src/content/pages/science-of-computing.md` |
 | Expertise / Science by Computing                                          | `src/content/pages/science-by-computing.md` |
+| Strategy / Strategy in Computing Science                                  | `src/content/pages/strategy.md`             |
 | Formations et cartes universitaires                                       | `src/content/pages/training.md`             |
 | Accès au laboratoire                                                      | `src/content/pages/visit.md`                |
 | Recrutement                                                               | `src/content/pages/jobs.md`                 |
