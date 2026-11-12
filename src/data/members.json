@@ -199,13 +199,14 @@
     "role": "Dicio-Conflatio"
   },
   {
-    "id": "yann-beaujeault-taudiere",
-    "name": "Yann BEAUJEAULT-TAUDIERE",
-    "group": "postdocs"
-  },
-  {
     "id": "marc-chung-to-sang",
     "name": "Marc CHUNG TO SANG",
+    "group": "external",
+    "role": "Dicio-Conflatio"
+  },
+  {
+    "id": "yann-beaujeault-taudiere",
+    "name": "Yann BEAUJEAULT-TAUDIERE",
     "group": "postdocs"
   },
   {
@@ -266,6 +267,11 @@
   {
     "id": "guillaume-salle",
     "name": "Guillaume SALLE",
+    "group": "engineers"
+  },
+  {
+    "id": "aubin-septier",
+    "name": "Aubin SEPTIER",
     "group": "engineers"
   },
   {
